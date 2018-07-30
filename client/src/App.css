@@ -1,22 +1,29 @@
 /* Landing Page */
 
 .company-tagline{
-    margin-top:20%;
     text-align: center;
+    position: relative;
+    z-index: 1!important;
 }
 .carousel-container{
     position: relative;
+}
+div.newsletter-container{
+    margin-top:20%!important;
+    z-index: 1!important;
+    width:100vw!important;
 }
 
 #company-copy{
     font-size: 1em!important;
     text-align: center;
+    position:relative;
 }
 
 
 @media only screen and (min-width: 800px) {
 .carousel{
-    position: fixed;
+    position: relative;
     width:100%;
     
 }
@@ -31,7 +38,7 @@ img.carousel-img{
 
 @media only screen and (max-width: 500px) {
     .carousel{
-        position: fixed;
+        position: relative;
         height:90%;
 
     }
@@ -54,8 +61,13 @@ img.carousel-img{
     text-align: center;
 }
 
-/* Mission subsection */
+/* Mission Container */
 
-.mission{
-    position: relative;
+#mission-container{
+    margin-top:40px;
+}
+
+/* Footer Container */
+.footer-container{
+    background-color:grey;
 }
