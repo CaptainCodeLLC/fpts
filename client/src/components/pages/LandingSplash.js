@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {Container, Row, Col, Input} from 'reactstrap';
 import Carousel from '../global/Carousel'
 import Mission from './Mission';
 import Services from './Services';
@@ -15,12 +14,19 @@ export default class LandingSplash extends Component {
     return ( 
         <div>       
             <Carousel className ="carousel"/>
+            <br/>
             <Mission/>
+            <br/>
             <Services/>
+            <br/>
             <Team/>
+            <br/>
             <Stats/>
+            <br/>
             <ClientCarousel/>
+            <br/>
             <Testimonial/>
+            <br/>
             <Contact/>
             <Footer/>
         </div>

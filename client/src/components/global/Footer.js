@@ -5,6 +5,7 @@ export default class Footer extends Component {
     return (
       <div className = "footer-container">
           <h1>Footer</h1>
+          <Container></Container>
       </div>
     )
   }

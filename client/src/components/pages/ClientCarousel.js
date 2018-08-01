@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Container, Carousel} from 'reactstrap';
+import {Container} from 'reactstrap';
 export default class ClientCarousel extends Component {
   render() {
     return (

@@ -4,7 +4,6 @@ import {
   CarouselItem,
   CarouselIndicators,
   CarouselCaption,
-  Col
 } from 'reactstrap';
 
 import wynwood from '../../images/wynwood.jpg';

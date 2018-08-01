@@ -1,27 +1,26 @@
 import React, { Component } from 'react'
 import {Container, Row, Col,Input} from 'reactstrap';
-import {BrowserRouter, Route,Link} from 'react-router-dom';
 
 import ImportantDates from './ImportantDates';
 
-const routes = [
-    // Important dates, Affiliations, links
-    {
-        path: '/important_dates',
-        sidebar: () => <div></div>,
-        main: () => <h2></h2>
-    },
-    {
-        path: '/affiliations',
-        sidebar: () => <div></div>,
-        main: () => <h2></h2>
-    },
-    {
-        path: '/links',
-        sidebar: () => <div></div>,
-        main: () => <h2></h2>
-    }
-]
+// const routes = [
+//     // Important dates, Affiliations, links
+//     {
+//         path: '/important_dates',
+//         sidebar: () => <div></div>,
+//         main: () => <h2></h2>
+//     },
+//     {
+//         path: '/affiliations',
+//         sidebar: () => <div></div>,
+//         main: () => <h2></h2>
+//     },
+//     {
+//         path: '/links',
+//         sidebar: () => <div></div>,
+//         main: () => <h2></h2>
+//     }
+// ]
 
 export default class Resources extends Component {
   render() {

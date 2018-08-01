@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import {Row, Col, Table, } from 'reactstrap';
+import { Table, } from 'reactstrap';
 export default class ImportantDates extends Component {
   render() {
     return (
       <div>
-       
 
         <h1 id = "important-dates-header">2018-2019 Property Tax Calendar</h1>
 

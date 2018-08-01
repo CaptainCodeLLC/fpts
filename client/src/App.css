@@ -67,6 +67,11 @@ img.carousel-img{
     margin-top:40px;
 }
 
+/* Approach Container */
+.emphasis{
+    font-size:3rem;
+}
+
 /* Footer Container */
 .footer-container{
     background-color:grey;
