@@ -1,5 +1,5 @@
-import React, { Component } from '../../../../../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react/../../../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react';
-import {Card, CardImg, CardBody, CardTitle, CardSubtitle, ButtonDropdown,DropdownToggle, DropdownMenu,DropdownItem} from '../../../../../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/reactstrap./../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/reactstrap';
+import React, { Component } from 'react';
+import {Card, CardImg, CardBody, CardTitle, CardSubtitle, ButtonDropdown,DropdownToggle, DropdownMenu,DropdownItem} from 'reactstrap';
 
 export default class TeamMember extends Component {
     constructor(props){

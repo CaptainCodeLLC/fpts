@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Container,Row,Col} from 'reactstrap';
-import CountUp from 'react-countup';
+import {CountUp} from 'react-countup';
 
 export default class Stats extends Component {
   render() {
