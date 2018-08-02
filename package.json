@@ -10,6 +10,7 @@
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "concurrently": "^3.6.0",
     "nodemon": "^1.18.3"
   },
@@ -20,9 +21,10 @@
   "scripts": {
     "client-install": "cd client && yarn install",
     "start": "node server.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build",
     "server": "nodemon server.js",
     "client": "cd client && yarn start",
-    "dev": "concurrently \"yarn server\" \"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "repository": "https://github.com/CaptainCodeLLC/fpts.git",
   "author": "Eddy D. Varela with Captain Code",
