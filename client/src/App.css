@@ -103,3 +103,30 @@ img.carousel-img{
     font-size: 1.4rem;
     text-align: center;
 }
+
+/* Testimonial Section */
+
+.testimonial-card{
+    text-align: center;
+}
+#testimonial-card-headshot{
+    border-radius:50%; 
+    max-height:140px; 
+    border:solid 2px;
+    border-color:orange;
+   
+}
+#testimonial-card-name{
+    font-size: 2rem;
+}
+#testimonial-card-company{
+    font-size:1.2rem;
+}
+#testimonial-vertical-line{
+    border-left: 3px solid rgba(10,10,10,.5);
+    border-radius:20px;
+    height: 105%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}

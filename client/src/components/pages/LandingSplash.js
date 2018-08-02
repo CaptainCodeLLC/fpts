@@ -5,7 +5,7 @@ import Services from './Services';
 import Team from './Team';
 import Stats from './Stats';
 import ClientCarousel from './ClientCarousel';
-import Testimonial from './Testimonial';
+import Testimonial from './Testimonial/Testimonial';
 import Contact from './Contact';
 import Footer from '../global/Footer';
 
