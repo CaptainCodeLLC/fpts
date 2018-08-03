@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
 //User Schema
 
@@ -17,7 +17,7 @@ const UserSchema = new Schema ({
         required:true
     },
     phoneNumber:{
-        type:Number,
+        type:String,
         required:false
     },
     companyName: {
@@ -30,4 +30,4 @@ const UserSchema = new Schema ({
     }
 }); 
 
-module.exports = Users = mongoose.model('user', UserSchema);
+mongoose.model('users', UserSchema);
