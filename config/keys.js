@@ -1,3 +1,5 @@
-module.exports = {
-    mongoURI: "mongodb://eddy_varela:GoEphs2020!!@ds145951.mlab.com:45951/fpts_backend"
+if (process.env.NODE_ENV === 'production') {
+    module.exports = require('./dev');
+} else {
+    module.exports = require('./dev');
 }
