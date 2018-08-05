@@ -1,24 +1,25 @@
 import React, { Component } from 'react'
 import {Container,Col,Row} from 'reactstrap';
-import airCanada from './companyLogos/aircanada.png';
-import autoNation from './companyLogos/autonation.png';
-import burgerKing from './companyLogos/burgerKing.png';
-import carmaxLogo from './companyLogos/carmaxLogo.png';
-import discoveryChannel from './companyLogos/discoveryChannel.png';
-import ihop from './companyLogos/ihop.png';
-import marriot from './companyLogos/marriot.png';
-import mcDonalds from './companyLogos/mcDonalds.png';
-import pandaExpress from './companyLogos/pandaExpress.png';
-import suntrust from './companyLogos/suntrust.png';
-import toyota from './companyLogos/toyota.png';
-import wendys from './companyLogos/wendys.png';
 
 
 
 export default class ClientCarousel extends Component {
   render() {
 
-    const CompanyNames = [ airCanada, autoNation, burgerKing, carmaxLogo, discoveryChannel,ihop, marriot,mcDonalds, pandaExpress, suntrust, toyota, wendys ]
+    const CompanyNames = [ 
+      'https://s3.amazonaws.com/fpts-images/aircanada.png'
+    , 'https://s3.amazonaws.com/fpts-images/autonation.png', 
+      'https://s3.amazonaws.com/fpts-images/burgerKing.png',
+      'https://s3.amazonaws.com/fpts-images/carmaxLogo.png', 
+      'https://s3.amazonaws.com/fpts-images/discoveryChannel.png', 
+      'https://s3.amazonaws.com/fpts-images/ihop.png', 
+      'https://s3.amazonaws.com/fpts-images/marriot.png', 
+      'https://s3.amazonaws.com/fpts-images/mcDonalds.png',
+      'https://s3.amazonaws.com/fpts-images/pandaExpress.png', 
+      'https://s3.amazonaws.com/fpts-images/suntrust.png', 
+      'https://s3.amazonaws.com/fpts-images/toyota.png', 
+      'https://s3.amazonaws.com/fpts-images/wendys.png'
+    ]
 
 
     const companyGrid = CompanyNames.map((company)=>
@@ -30,13 +31,13 @@ export default class ClientCarousel extends Component {
   )
   
     return (
-      <div>
+      <div /*style = {{backgroundColor:'darkgrey'}}*/>
         <Container>
           <h1>Who we serve</h1>
           <br/>
           <Row>
-          {companyGrid}
-        </Row>
+            {companyGrid}
+          </Row>
         </Container>
         
       </div>

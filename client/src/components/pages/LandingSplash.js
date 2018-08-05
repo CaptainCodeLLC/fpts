@@ -8,11 +8,12 @@ import ClientCarousel from './ClientCarousel';
 import Testimonial from './Testimonial/Testimonial';
 import Contact from './Contact';
 import Footer from '../global/Footer';
+import Navigation from '../global/navigation';
 
 export default class LandingSplash extends Component {
   render() {
     return ( 
-        <div>       
+        <div>    
             <Carousel className ="carousel"/>
             <br/>
             <Mission/>

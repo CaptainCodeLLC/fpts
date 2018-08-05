@@ -24,6 +24,10 @@ const UserSchema = new Schema ({
         type:String,
         required:false
     },
+    message:{
+        type:String,
+        required:true
+    },
     date:{
         type:Date,
         default:Date.now
