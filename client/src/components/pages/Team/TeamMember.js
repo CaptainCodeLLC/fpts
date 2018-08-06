@@ -19,13 +19,14 @@ export default class TeamMember extends Component {
   render() {
     return (
       <div>
-         <Card>
-            <CardImg top width="100%" height="120%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97318&w=318&h=318" alt="Card image cap" />
-            <CardBody>
+         <Card style ={{marginBottom:'20px'}}>
+            <CardImg top  src={this.props.image} alt="Card image cap" />
+            <CardBody style = {{textAlign:'center'}}>
                 <CardTitle>{this.props.name}</CardTitle>
-                <CardSubtitle>{this.props.role}
+                <CardSubtitle style ={{marginRight:10}}>{this.props.role}
                 <ButtonDropdown  isOpen={this.state.dropDownOpen} onClick={this.toggle}>
-                <DropdownToggle style = {{marginLeft:50, borderRadius:50, marginTop:'10px'}}caret color = "success">
+                
+                <DropdownToggle style = {{ marginLeft:'15px', borderRadius:50, marginTop:'10px'}}caret color = "success">
                 Learn more
                 </DropdownToggle>
                 <DropdownMenu>

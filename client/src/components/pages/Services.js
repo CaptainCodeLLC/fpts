@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import {Container, Row, Col,Card, CardBody,CardTitle, CardSubtitle, Button} from 'reactstrap';
+import coastline from '../global/Carousel/images/coastline.jpg';
+import downtownNighttime from '../global/Carousel/images/downtownNighttime.jpg';
+
 export default class Services extends Component {
   render() {
 
@@ -7,17 +10,17 @@ export default class Services extends Component {
       {
       cardTitle:"Real Estate Property",
       cardSubtitle:"Some information",
-      cardImage:{},
+      cardImage:downtownNighttime,
       cardText:"",
-      link: "https://twitter.com",
+      link: "/real_estate_property",
       cardLink2: ""
     },
     {
       cardTitle:"Tangible Personal Property",
       cardSubtitle:"Some information",
-      cardImage:{},
+      cardImage:coastline,
       cardText:"",
-      cardLink1: "",
+      link:"/tangible_personal_property",
       cardLink2: ""
     },
 
@@ -30,9 +33,8 @@ export default class Services extends Component {
             <CardTitle>{card.cardTitle}</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
           </CardBody>
-          <img width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card cap" />
+          <img width="100%" src={card.cardImage} alt="Card cap" />
           <CardBody>
-            {/* <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText> */}
             <Button color = "warning"  href = {card.link} style= {{width:'50%', marginLeft:'25%'}}> More info</Button>
           </CardBody>
         </Card>
@@ -44,9 +46,12 @@ export default class Services extends Component {
       <Container>
         <Row>
           <h1>Approach and Services</h1>
+         
+        
         </Row>
         <Container>
-          <p><span className = "emphasis">What we do</span>:  We prepare for your property tax appeal through an intensive research process, producing straightforward but highly effective presentations specifically tailored to each individual property. Mirroring the county’s assessment practices, FPTS combines comprehensive research capabilities and advanced technology with creative and innovative techniques to build a solid and convincing case for assessment reductions
+          <br/>
+          <p><span className = "emphasis">What we do </span>    We prepare for your property tax appeal through an intensive research process, producing straightforward but highly effective presentations specifically tailored to each individual property. Mirroring the county’s assessment practices, FPTS combines comprehensive research capabilities and advanced technology with creative and innovative techniques to build a solid and convincing case for assessment reductions
             </p>
           <Row>
             {CardObj}
