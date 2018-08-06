@@ -65,7 +65,6 @@ div.newsletter-container{
     position: absolute;
     text-align: center;
     top:15%;
-    left: auto;
     display:flex;
     flex-direction: column;
 }

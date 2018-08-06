@@ -6,8 +6,14 @@ const Slide = props => (
         <div className = "carousel-img">
             <img src = {props.img}/>
             <Container className = "text-container">
-                <Row>
-                    <Col sm = {{size:12}} lg={{ offset:7 }}>
+                <Row style = {{textAlign:'center'}}>
+                    <Col xs = {{size:11 , offset:1}}
+                         sm = {{size:11, offset:1 }}
+                         md = {{size:11, offset:1 }} 
+                         lg={{size:8, offset:4}}
+                         xl = {{size: 5, offset:7}}
+                        xxl = {{size:5, offset:7}}
+                         >
                             <h1>Florida Property Tax Service</h1>
                     </Col>
                 </Row>
@@ -15,7 +21,12 @@ const Slide = props => (
             </Container>
             <Container className = "text-container">
                 <Row>
-                    <Col sm = {{size:12}} lg={{ offset:7 }}>
+                    <Col xs = {{size:11 , offset:1}}
+                         sm = {{size:11, offset:1 }}
+                         md = {{size:11, offset:1 }} 
+                         lg={{size:8, offset:4}}
+                         xl = {{size: 5, offset:7}}
+                        xxl = {{size:5, offset:7}}>
                             <h2>Saving our clients millions annually</h2>
                     </Col>
                 </Row>
