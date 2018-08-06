@@ -43,7 +43,7 @@ export default class Contact extends Component {
       <Container className = "contact-form">
         <Row>
           <Col lg='6'>
-            <img style={{ maxHeight: '450px' }} src={iPhone} />
+            <img style={{ maxHeight: '500px' }} src={iPhone} />
           </Col>
           <Col lg='5'>
 
@@ -58,6 +58,7 @@ export default class Contact extends Component {
                     value={this.state.firstName}
                     onChange={e => this.handleChange(e)}
                   />
+                  <br/>
                 </Col>
                 <Col>
                   <Input
@@ -77,7 +78,9 @@ export default class Contact extends Component {
                     value={this.state.emailAddress}
                     onChange={e => this.handleChange(e)}
                   />
+                  <br/>
                 </Col>
+                
               </Row>
               <Input
                 name="phoneNumber"
@@ -85,15 +88,17 @@ export default class Contact extends Component {
                 value={this.state.phoneNumber}
                 onChange={e => this.handleChange(e)}
               />
+              <br/>
               <Input
                 name="companyName"
                 placeholder="Company Name"
                 value={this.state.companyName}
                 onChange={e => this.handleChange(e)}
               />
+              <br/>
               <Input
                 type="textarea"
-                style={{ height: 160 }}
+                style={{ height: 180 }}
                 name="message"
                 placeholder="Talk to us"
                 value={this.state.companyName}

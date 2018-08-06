@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Carousel from '../global/Carousel'
+import Slider from '../global/Carousel/Carousel'
 import Mission from './Mission';
 import Services from './Services';
-import Team from './Team';
+import Team from './Team/Team';
 import Stats from './Stats';
 import ClientCarousel from './ClientCarousel';
 import Testimonial from './Testimonial/Testimonial';
@@ -14,7 +14,7 @@ export default class LandingSplash extends Component {
   render() {
     return ( 
         <div>    
-            <Carousel className ="carousel"/>
+            <Slider className ="carousel"/>
             <br/>
             <Mission/>
             <br/>

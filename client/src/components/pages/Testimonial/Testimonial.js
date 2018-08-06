@@ -51,7 +51,7 @@ export default class Testimonial extends Component {
              </h1>
              <br/>
           <Row>
-            <div id = "testimonial-vertical-line"/> 
+           
             {testimonialGrid}
           </Row>
       </Container>
