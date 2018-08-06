@@ -27,7 +27,7 @@ div.newsletter-container{
 
 .overlay{
     position: absolute;
-    width:99vw;
+    width:100vw;
     height:100vh;
     top:0;
     left:0;
@@ -76,7 +76,7 @@ div.newsletter-container{
     z-index: 100!important;
 }
 .text-container h2{
-    margin-left:2.2vw;
+    margin-left:2.5vw;
     margin-top:88px;
     font-size:2rem;
     color:white;
