@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import Home from './components/pages/Home';
-import Resources from './components/pages/Resources/';
+import Home from './components/LandingSplash';
+import Resources from './components/pages/Resources';
 
 
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Container, Row, Col,Input} from 'reactstrap';
-
+import './resources.css'
 import ImportantDates from './ImportantDates';
 
 // const routes = [
@@ -29,13 +29,13 @@ export default class Resources extends Component {
         <Row className ="resources-container">
             <Col>
                 <h1 id ="resources-header">Resources</h1>
-            </Col>    
+            </Col>
         </Row>
         <Row id = "resources-links">
             <Col lg = '2'>
             <a  href= "/#Dates">
                 <p>
-                    Important Dates 
+                    Important Dates
                 </p>
             </a>
             </Col> |
@@ -58,11 +58,11 @@ export default class Resources extends Component {
         <Row>
             <h3>Important Dates</h3>
         </Row>
-        <Row>            
+        <Row>
             <Col lg = '5'>
                 <h1>2017 VAB Tax appeal filing deadlines</h1>
             </Col>
-            <Col lg = '7'>       
+            <Col lg = '7'>
                 <ImportantDates/>
             </Col>
         </Row>

@@ -1,40 +1,50 @@
 import React from 'react';
-import {Container,Row,Col} from  'reactstrap'
-const Slide = props => (
-    <div className = "slide-container">
-        <header className = "overlay"/>
-        <div className = "carousel-img">
-            <img src = {props.img}/>
-            <Container className = "text-container">
-                <Row style = {{textAlign:'center'}}>
-                    <Col xs = {{size:11 , offset:1}}
-                         sm = {{size:11, offset:1 }}
-                         md = {{size:11, offset:1 }} 
-                         lg={{size:8, offset:4}}
-                         xl = {{size: 5, offset:7}}
-                        xxl = {{size:5, offset:7}}
-                         >
-                            <h1>Florida Property Tax Service</h1>
-                    </Col>
-                </Row>
-              
-            </Container>
-            <Container className = "text-container">
-                <Row>
-                    <Col xs = {{size:11 , offset:1}}
-                         sm = {{size:11, offset:1 }}
-                         md = {{size:11, offset:1 }} 
-                         lg={{size:8, offset:4}}
-                         xl = {{size: 5, offset:7}}
-                        xxl = {{size:5, offset:7}}>
-                            <h2>Saving our clients millions annually</h2>
-                    </Col>
-                </Row>
-              
-            </Container>
-        </div>
-    
-    </div>
-)
+import axios from 'axios';
+import {Input, Button} from  'reactstrap'
 
-export default Slide;
+export default class Slide extends React.Component {
+
+  state = {
+    emailAddress: '',
+  }
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+  }
+
+
+  render(){
+    return(
+      <div className = "slide-container">
+          <header className = "overlay"/>
+          <div className = "carousel-img">
+              <img src = {this.props.img}/>
+              <div className = "text-container">
+                  <div>
+                    <h1>Florida Property Tax Service</h1>
+                  </div>
+              </div>
+              <div className = "text-container">
+                  <div>
+                    <p>Saving our clients millions annually</p>
+                  </div>
+                  <Input type='email'
+                    name="emailAddress"
+                    value={this.state.emailAddress}
+                    onChange={e => this.handleChange(e)}
+                    placeholder =  "Email address for our newsletter"/>
+                  <Button color = "warning">Submit</Button>
+                </div>
+
+          </div>
+
+      </div>
+    )
+
+  }
+}

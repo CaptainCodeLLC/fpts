@@ -1,10 +1,19 @@
 html{
     height:100%;
 }
-body{
-    margin-top:60px;
+body {
+    margin-top:76px;
     padding:0;
     height:100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p1,p2{
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Landing Page */
@@ -23,111 +32,6 @@ div.newsletter-container{
     width:100vw!important;
 }
 
-/* Carousel */
-
-.overlay{
-    position: absolute;
-    width:99vw;
-    height:100vh;
-    top:0;
-    left:0;
-    background: rgba(0, 0, 0,0.55);
-    z-index: 100!important;
-}
-
-.slide-container{
-    width:100vw;
-    height:90vh;
-    position: relative;
-    
-}
-.carousel-img img{
-    width:100%;
-    height:100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.carousel-img{
-    width:100%;
-    height:100%;
-}
-#company-copy{
-    font-size: 1em!important;
-    text-align: center;
-    position:relative;
-}
-
-.text-container{
-  
-    width:100%;
-    object-fit: cover;
-    position: absolute;
-    text-align: center;
-    top:15%;
-    display:flex;
-    flex-direction: column;
-}
-.text-container h1{
-    font-size:3rem;
-    color:white;
-    position: fixed;
-    z-index: 100!important;
-}
-.text-container h2{
-    margin-left:2.2vw;
-    margin-top:88px;
-    font-size:2rem;
-    color:white;
-    position: fixed;
-    z-index: 100!important;
-}
-
-
-/* Navbar */
-.nav-link{
-color:white!important;
-}
-
-.link-container{
-    margin-top: 20px;
-}
-
-.fas{
-    margin-left: 10px;
-}
-@media only screen and (min-width: 800px) {
-.carousel{
-    position: relative;
-    width:100%;
-    
-}
-
-img.carousel-img{
-    width:100%;
-    height:100%!important;
-    overflow: hidden;
-    z-index: 0;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .carousel{
-        position: relative;
-        height:90%;
-
-    }
-    .carousel-img{
-        width:auto;
-        height:93vh;
-        z-index: 0;
-    }
-    .company-tagline{
-
-        text-align: center;
-    }
-    
-}
 
 .email-input{
     margin-top:20px;
@@ -191,11 +95,11 @@ img.carousel-img{
     text-align: center;
 }
 #testimonial-card-headshot{
-    border-radius:50%; 
-    max-height:140px; 
+    border-radius:50%;
+    max-height:140px;
     border:solid 2px;
     border-color:orange;
-   
+
 }
 #testimonial-card-name{
     font-size: 2rem;

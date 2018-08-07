@@ -1,0 +1,27 @@
+
+/* Resources Page */
+.resources-container{
+    text-align: center;
+}
+#resources-header{
+    margin-top: 3%;
+    font-size: 3rem;
+}
+#resources-links{
+    text-align:center;
+    justify-content: center;
+}
+#resources-search{
+   margin:auto;
+}
+
+#search-style{
+    text-align: center;
+    border-radius:50px;
+    height:2rem;
+}
+
+#important-dates-header{
+    font-size: 1.4rem;
+    text-align: center;
+}

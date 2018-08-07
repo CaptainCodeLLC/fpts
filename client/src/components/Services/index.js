@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {Container, Row, Col,Card, CardBody,CardTitle, CardSubtitle, Button} from 'reactstrap';
-import coastline from '../global/Carousel/images/coastline.jpg';
-import downtownNighttime from '../global/Carousel/images/downtownNighttime.jpg';
-
+import coastline from './images/coastline.jpg';
+import downtownNighttime from './images/downtownNighttime.jpg';
+import './services.css'
 export default class Services extends Component {
   render() {
 
@@ -39,15 +39,15 @@ export default class Services extends Component {
           </CardBody>
         </Card>
       </Col>
-    ) 
+    )
 
 
     return (
       <Container>
         <Row>
           <h1>Approach and Services</h1>
-         
-        
+
+
         </Row>
         <Container>
           <br/>

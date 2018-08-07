@@ -80,7 +80,7 @@ export default class Contact extends Component {
                   />
                   <br/>
                 </Col>
-                
+
               </Row>
               <Input
                 name="phoneNumber"
@@ -101,7 +101,7 @@ export default class Contact extends Component {
                 style={{ height: 180 }}
                 name="message"
                 placeholder="Talk to us"
-                value={this.state.companyName}
+                value={this.state.message}
                 onChange={e => this.handleChange(e)}
               />
 

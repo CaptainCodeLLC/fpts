@@ -3,16 +3,16 @@
     top:0;
     left:0;
     width:100%;
-    background:rgb(74, 75, 77);
-    height:60px;
+    background:rgba(74, 75, 77, 1);
+    height:76px;
     z-index: 1!important;
 }
 
 .toolbar_logo img {
-   max-width: 200px;
+   max-width: 220px;
 }
 .toolbar_logo{
-    margin-left:1.1rem; 
+    margin-left:1.1rem;
 }
 
 .toolbar_nav{

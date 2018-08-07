@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import Slide from './Slide';
-
+import './landing-carousel.css'
 
 import miamiSkyline from './images/miamiSkyline.jpg';
 import parkingGarage from './images/parkingGarage.jpg';
@@ -31,12 +31,12 @@ export default class Carousel extends React.Component {
           <Slide img = {miamiSkyline}/>
           <Slide img = {rooftop}/>
           <Slide img = {parkingGarage}/>
-          <Slide img = {traffic}/>  
+          <Slide img = {traffic}/>
           <Slide img = {sunrise}/>
           <Slide img = {parkingGarage1}/>
         </Slider>
         </div>
-      
+
     );
   }
 }

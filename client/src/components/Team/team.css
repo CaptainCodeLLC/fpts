@@ -1,0 +1,5 @@
+/* Team */
+.team-container{
+    display:flex;
+    justify-content: space-around;
+}
