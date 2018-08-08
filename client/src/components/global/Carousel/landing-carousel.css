@@ -77,7 +77,6 @@
 .text-container button{
     margin-top:250px;
     font-size:1.3rem;
-
     width:6%;
     position: absolute;
     z-index: 100!important;
@@ -116,7 +115,6 @@ img.carousel-img{
         z-index: 0;
     }
     .company-tagline{
-
         text-align: center;
     }
 
