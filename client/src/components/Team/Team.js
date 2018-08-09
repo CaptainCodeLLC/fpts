@@ -9,8 +9,8 @@ import l1 from './images/l1.jpg';
 import l2 from './images/l2.jpg';
 import l3 from './images/l3.jpg';
 import maria from './images/maria.jpg';
-
-
+import Parallax from '../global/parallax/Parallax';
+import team from './images/FPTSTeamCrop.jpg'
 
 
 export default class Team extends Component {
@@ -80,9 +80,10 @@ export default class Team extends Component {
   )
 
     return (
-      <Container>
-          <h1>The FPTS Team</h1>
+      <div>
+        <Parallax src = {team} text = "The FPTS Team"/>
           <hr/>
+          <Container>
           <Row className = "team-container">
             {TeamGrid1}
           </Row>
@@ -90,7 +91,8 @@ export default class Team extends Component {
           <Row className = "team-container">
             {TeamGrid2}
           </Row>
-      </Container>
+          </Container>
+      </div>
     )
   }
 }

@@ -3,25 +3,24 @@ import {Container, Row, Col,Card, CardBody,CardTitle, CardSubtitle, Button} from
 import coastline from './images/coastline.jpg';
 import downtownNighttime from './images/downtownNighttime.jpg';
 import './services.css'
+import Parallax from '../global/parallax/Parallax';
 export default class Services extends Component {
   render() {
 
     const cardInfo = [
       {
-      cardTitle:"Real Estate Property",
+      cardTitle:"Real Estate",
       cardSubtitle:"Some information",
       cardImage:downtownNighttime,
       cardText:"",
       link: "/real_estate_property",
-      cardLink2: ""
     },
     {
       cardTitle:"Tangible Personal Property",
-      cardSubtitle:"Some information",
+      cardSubtitle:"Protect the things you care about",
       cardImage:coastline,
       cardText:"",
       link:"/tangible_personal_property",
-      cardLink2: ""
     },
 
     ]
@@ -31,7 +30,7 @@ export default class Services extends Component {
         <Card>
           <CardBody>
             <CardTitle>{card.cardTitle}</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
+            <CardSubtitle>{card.cardSubtitle}</CardSubtitle>
           </CardBody>
           <img width="100%" src={card.cardImage} alt="Card cap" />
           <CardBody>
@@ -43,12 +42,8 @@ export default class Services extends Component {
 
 
     return (
-      <Container>
-        <Row>
-          <h1>Approach and Services</h1>
-
-
-        </Row>
+      <div>
+          <Parallax src = {downtownNighttime} text = 'Approach and Services'/>
         <Container>
           <br/>
           <p><span className = "emphasis">What we do </span>    We prepare for your property tax appeal through an intensive research process, producing straightforward but highly effective presentations specifically tailored to each individual property. Mirroring the county’s assessment practices, FPTS combines comprehensive research capabilities and advanced technology with creative and innovative techniques to build a solid and convincing case for assessment reductions
@@ -57,7 +52,7 @@ export default class Services extends Component {
             {CardObj}
           </Row>
         </Container>
-      </Container>
+      </div>
     )
   }
 }
