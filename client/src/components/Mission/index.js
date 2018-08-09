@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Container} from 'reactstrap';
 import './mission.css'
-import Parallax from '../global/parallax/ImageParallax';
-import team from './images/TeamParallax.jpg'
+import team from './images/misson2.jpg';
+import Parallax from '../global/parallax/Parallax';
 
 export default class Mission extends Component {
 
@@ -10,11 +10,8 @@ export default class Mission extends Component {
     return (
 
         <div id = "mission-container">
-            <Parallax src= {team}
-              reduceHeight = {2/5}
-              id = "parallax-img"
-              />
 
+          <Parallax src={team} text="Our Mission"/>
           <hr/>
           <div className = "container">
             <h2>

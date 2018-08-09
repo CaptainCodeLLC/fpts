@@ -15,9 +15,9 @@ import maria from './images/maria.jpg';
 
 export default class Team extends Component {
 
- 
+
   render() {
-    const teamMembers = [
+    const teamMembers1 = [
       {
       name: "Ronald Rodriguez",
       role: " President ",
@@ -34,20 +34,22 @@ export default class Team extends Component {
         {
           name: "firstName lastName",
           role: " President3",
-          picture:l1,
+          picture:m2,
           bio:"Some information about liz",
-        },
+        }
+      ]
+      const teamMembers2=[
         {
           name: "Maria ",
           role: " President3",
           picture:maria,
           bio:"Some information about Maria",
         },
-    
+
         {
           name: "firstName lastName",
           role: "President2",
-          picture:m2,
+          picture:l1,
           bio:"Some information about pres2",
         },
           {
@@ -62,21 +64,31 @@ export default class Team extends Component {
             picture:l3,
             bio:"Some information about Maria",
           },
-    
+
     ]
 
-    const TeamGrid = teamMembers.map((member) =>
+    const TeamGrid1 = teamMembers1.map((member) =>
+      <Col lg = {{size:'4'}}>
+      <TeamMember name = {member.name} image = {member.picture} role = {member.role} bio={member.bio}/>
+    </Col>
+
+    )
+    const TeamGrid2 = teamMembers2.map((member) =>
       <Col lg = {{size:'3'}}>
       <TeamMember name = {member.name} image = {member.picture} role = {member.role} bio={member.bio}/>
     </Col>
-  
-    )
+  )
+
     return (
       <Container>
           <h1>The FPTS Team</h1>
           <hr/>
           <Row className = "team-container">
-            {TeamGrid}
+            {TeamGrid1}
+          </Row>
+          <br/>
+          <Row className = "team-container">
+            {TeamGrid2}
           </Row>
       </Container>
     )

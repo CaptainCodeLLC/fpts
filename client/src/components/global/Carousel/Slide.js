@@ -37,7 +37,7 @@ export default class Slide extends React.Component {
                     name="emailAddress"
                     value={this.state.emailAddress}
                     onChange={e => this.handleChange(e)}
-                    placeholder =  "Email address for our newsletter"/>
+                    placeholder =  "Join our newsletter"/>
                   <Button color = "warning">Submit</Button>
                 </div>
 

@@ -19,21 +19,22 @@ export default class TeamMember extends Component {
   render() {
     return (
       <div>
-         <Card style ={{marginBottom:'20px'}}>
-            <CardImg top  src={this.props.image} alt="Card image cap" />
+         <Card style ={{marginBottom:'15px'}}>
+            <CardImg style ={{height:'10%'}}top  src={this.props.image} alt="Card image cap" />
             <CardBody style = {{textAlign:'center'}}>
                 <CardTitle>{this.props.name}</CardTitle>
                 <CardSubtitle style ={{marginRight:10}}>{this.props.role}
-                <ButtonDropdown  isOpen={this.state.dropDownOpen} onClick={this.toggle}>
-                
-                <DropdownToggle style = {{ marginLeft:'15px', borderRadius:50, marginTop:'10px'}}caret color = "success">
+                  <br/>
+                  <ButtonDropdown  isOpen={this.state.dropDownOpen} onClick={this.toggle}>
+
+                <DropdownToggle style = {{ borderRadius:50, marginTop:'10px'}}caret color = "success">
                 Learn more
                 </DropdownToggle>
                 <DropdownMenu>
                     <DropdownItem header>
                         {this.props.bio}
                     </DropdownItem>
-                    
+
                 </DropdownMenu>
                 </ButtonDropdown>
                 </CardSubtitle>

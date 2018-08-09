@@ -32,6 +32,7 @@ div.newsletter-container{
     width:100vw!important;
 }
 
+
 .email-input{
     margin-top:20px;
     border-radius:30px;
@@ -39,54 +40,12 @@ div.newsletter-container{
     text-align: center;
 }
 
-/* Mission Container */
 
-#mission-container{
-    margin-top:40px;
-}
 
-/* Approach Container */
-.emphasis{
-    font-size:3rem;
-}
 
-/* Team */
-.team-container{
-    display:flex;
-    justify-content: space-around;
-}
 
-/* Footer Container */
-.footer-container{
-    background-color:grey;
-}
 
-/* Resources Page */
-.resources-container{
-    text-align: center;
-}
-#resources-header{
-    margin-top: 3%;
-    font-size: 3rem;
-}
-#resources-links{
-    text-align:center;
-    justify-content: center;
-}
-#resources-search{
-   margin:auto;
-}
 
-#search-style{
-    text-align: center;
-    border-radius:50px;
-    height:2rem;
-}
-
-#important-dates-header{
-    font-size: 1.4rem;
-    text-align: center;
-}
 
 /* Testimonial Section */
 
