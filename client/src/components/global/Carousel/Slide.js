@@ -24,12 +24,12 @@ export default class Slide extends React.Component {
           <header className = "overlay"/>
           <div className = "carousel-img">
               <img src = {this.props.img}/>
-              <div className = "text-container">
+              <div id = "text-container">
                   <div>
                     <h1>Florida Property Tax Service</h1>
                   </div>
               </div>
-              <div className = "text-container">
+              <div id = "text-container">
                   <div>
                     <p>Saving our clients millions annually</p>
                   </div>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {Container, Row, Col,Input} from 'reactstrap';
 import './resources.css'
-import ImportantDates from './ImportantDates';
-
+import ImportantDates from './ImportantDates/';
+import Affiliations from './Affiliations/';
 // const routes = [
 //     // Important dates, Affiliations, links
 //     {
@@ -31,20 +31,20 @@ export default class Resources extends Component {
                 <h1 id ="resources-header">Resources</h1>
             </Col>
         </Row>
-        <Row id = "resources-links">
-            <Col lg = '2'>
+        <Row sm = '12' id = "resources-links">
+            <Col xs = '3' sm = '3' lg = '2'>
             <a  href= "/#Dates">
                 <p>
                     Important Dates
                 </p>
             </a>
             </Col> |
-            <Col lg = '2'>
+            <Col xs = '3' sm = '3' lg = '2'>
                 <p>
                     Affiliations
                 </p>
             </Col>|
-            <Col lg = '2'>
+            <Col  xs = '3' sm = '3' lg = '2'>
                 <p>
                     Links
                 </p>
@@ -66,6 +66,21 @@ export default class Resources extends Component {
                 <ImportantDates/>
             </Col>
         </Row>
+          <Col lg = '12'>
+            <h1>
+                Affiliations
+            </h1>
+          </Col>
+          <Container>
+          <Col lg= '12'>
+            <h3>
+                Memberships
+            </h3>
+          </Col>
+          <Row>
+            <Affiliations/>
+          </Row>
+        </Container>
       </Container>
     )
   }

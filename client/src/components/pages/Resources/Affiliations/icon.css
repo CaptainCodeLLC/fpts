@@ -1,0 +1,25 @@
+
+.card-img-overlay:hover{
+  transition: all 0.5s;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 15%;
+}
+
+.card-img-border{
+  border-radius: 15%;
+  margin-bottom:10px;
+}
+
+#affiliate-text-container, h4, p2{
+  height:100%;
+  text-align: center;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+#affiliate-text-container:hover, h4, p2{
+  height:100%;
+  text-align: center;
+  transition: all 0.5s;
+  opacity: 1;
+}

@@ -4,10 +4,10 @@ import TestimonialCard from './TestimonialCard';
 import inigo from './headshots/inigArdid.jpg';
 import normanHall from './headshots/normanHall.jpg';
 import osvaldo from './headshots/osvaldo.jpg';
-
+import './testimonial.css'
 export default class Testimonial extends Component {
 
-  
+
   render() {
     const clients = [
       {
@@ -32,14 +32,14 @@ export default class Testimonial extends Component {
       },
   ]
 
-  const testimonialGrid = clients.map((client) => 
- 
-      <TestimonialCard name = {client.clientName} 
-                      companyName = {client.companyName} 
+  const testimonialGrid = clients.map((client) =>
+
+      <TestimonialCard name = {client.clientName}
+                      companyName = {client.companyName}
                       image = {client.clientPicture}
                       review = {client.review}
                       verticalLine = {client.verticalLine}/>
-                   
+
   )
 
     return (
@@ -51,7 +51,7 @@ export default class Testimonial extends Component {
              </h1>
              <br/>
           <Row>
-           
+
             {testimonialGrid}
           </Row>
       </Container>
