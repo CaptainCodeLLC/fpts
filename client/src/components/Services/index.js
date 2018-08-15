@@ -10,14 +10,14 @@ export default class Services extends Component {
     const cardInfo = [
       {
       cardTitle:"Real Estate",
-      cardSubtitle:"Some information",
+      cardSubtitle:"Commercial and Residential Property",
       cardImage:downtownNighttime,
       cardText:"",
       link: "/real_estate_property",
     },
     {
       cardTitle:"Tangible Personal Property",
-      cardSubtitle:"Protect the things you care about",
+      cardSubtitle:"Protect what you care about",
       cardImage:coastline,
       cardText:"",
       link:"/tangible_personal_property",
@@ -43,14 +43,60 @@ export default class Services extends Component {
 
     return (
       <div>
-          <Parallax src = {downtownNighttime} text = 'Approach and Services'/>
+          <Parallax src = {downtownNighttime} caption= "Innovative • Thorough • Effective" text = 'Approach and Services'/>
         <Container>
           <br/>
-          <p><span className = "emphasis">What we do </span>    We prepare for your property tax appeal through an intensive research process, producing straightforward but highly effective presentations specifically tailored to each individual property. Mirroring the county’s assessment practices, FPTS combines comprehensive research capabilities and advanced technology with creative and innovative techniques to build a solid and convincing case for assessment reductions
-            </p>
+        <p className = "section-content"> <span className = "emphasis">Approach</span></p>
+          <ol>
+            <li>
+              <p className = "services-content">Review and analyze your property</p>
+            </li>
+            <li>
+              <p className = "services-content">Obtain current and past assessment information</p>
+            </li>
+            <li>
+              <p className = "services-content">Determine current assessment method</p>
+            </li>
+            <li>
+              <p className = "services-content">Obtain necessary property information</p>
+            </li>
+            <li>
+              <p className = "services-content">Prepare file petitions</p>
+            </li>
+            <li>
+              <p className = "services-content">Perform field inspections</p>
+            </li>
+            <li>
+              <p className = "services-content">Analyze comparable market sales and income values of property</p>
+            </li>
+            <li>
+              <p className = "services-content">Analyze cost approach</p>
+            </li>
+            <li>
+              <p className = "services-content">Consult the county assessors</p>
+            </li>
+            <li>
+              <p className = "services-content">Prepare pictures, aerials, site layouts and value data for presentation to the Value Adjustment Board</p>
+            </li>
+            <li>
+              <p className = "services-content">Appear before the Value Adjustment Board</p>
+            </li>
+            <li>
+              <p className = "services-content">Handle all correspondence with the Property Appraiser's office</p>
+            </li>
+            <li>
+              <p className = "services-content">Assist in obtaining refunds</p>
+            </li>
+          </ol>
+          <br/>
+          <p className = "section-content"><span className = "emphasis">Services </span>  We prepare for your property tax appeal through an intensive 
+          research process, producing straightforward but highly effective presentations specifically tailored to each 
+          indvidual property. Mirroring the county’s assessment practices, FPTS combines comprehensive researchcapabilities and advanced technology with creative and innovative techniques to build a solid and convincing case for assessment reductions.
+          </p>
           <Row>
             {CardObj}
           </Row>
+          
         </Container>
       </div>
     )

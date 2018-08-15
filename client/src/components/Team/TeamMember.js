@@ -23,8 +23,8 @@ export default class TeamMember extends Component {
             <CardImg style ={{height:'10%'}}top  src={this.props.image} alt="Card image cap" />
             <CardBody style = {{textAlign:'center'}}>
                 <CardTitle>{this.props.name}</CardTitle>
-                <CardSubtitle style ={{marginRight:10}}>{this.props.role}
-                  <br/>
+                <CardSubtitle style ={{marginBottom:10}}>{this.props.role}</CardSubtitle>
+                <CardSubtitle style ={{marginRight:10}}>{this.props.role2}</CardSubtitle>
                   <ButtonDropdown  isOpen={this.state.dropDownOpen} onClick={this.toggle}>
 
                 <DropdownToggle style = {{ borderRadius:50, marginTop:'10px'}}caret color = "success">
@@ -37,7 +37,6 @@ export default class TeamMember extends Component {
 
                 </DropdownMenu>
                 </ButtonDropdown>
-                </CardSubtitle>
             </CardBody>
         </Card>
       </div>

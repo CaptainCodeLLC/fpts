@@ -10,7 +10,6 @@ import rooftop from './images/rooftop.jpg';
 import sunrise from './images/sunrise.jpg';
 import sunset from './images/sunset.jpg';
 import traffic from './images/traffic.jpg';
-import wynwood from './images/wynwood.jpg';
 
 export default class Carousel extends React.Component {
   render() {
@@ -34,6 +33,8 @@ export default class Carousel extends React.Component {
           <Slide img = {traffic}/>
           <Slide img = {sunrise}/>
           <Slide img = {parkingGarage1}/>
+          <Slide img = {sunset}/>
+          
         </Slider>
         </div>
 

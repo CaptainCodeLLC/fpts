@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import {Input, Button} from  'reactstrap'
+import Modal from './modal';
 
 export default class Slide extends React.Component {
 
@@ -31,14 +31,9 @@ export default class Slide extends React.Component {
               </div>
               <div id = "text-container">
                   <div>
-                    <p>Saving our clients millions annually</p>
+                    <p>Saving Millions for Our Clients Every Year </p>
                   </div>
-                  <Input type='email'
-                    name="emailAddress"
-                    value={this.state.emailAddress}
-                    onChange={e => this.handleChange(e)}
-                    placeholder =  "Join our newsletter"/>
-                  <Button color = "warning">Submit</Button>
+                  <Modal style = {{zIndex:"5!important"}} buttonLabel = "Join our newsletter" className = "modal"/>
                 </div>
 
           </div>

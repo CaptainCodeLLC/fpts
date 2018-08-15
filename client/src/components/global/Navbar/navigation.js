@@ -17,7 +17,14 @@ const toolbar = props => (
             <div className = "toolbar-navigation-items">
                 <ul>
                     <li>
+                        <a href="/news_notes">News & Info</a>
+                    </li>
+                    <li>
                         <a href="/resources">Resources</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about">About</a>
                     </li>
                     <li>
                         <a href="/contact">Contact</a>

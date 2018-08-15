@@ -115,14 +115,14 @@ export default class ImportantLinks extends Component {
                 </h1>
             </Col>
             <hr/>
-            <Col lg ={{size:'4', offset:'2'}}>
+            <Col md = {{size:6}} lg ={{size:'4', offset:'2'}}>
                 <h2>
                     Broward County
                 </h2>
                 {broward}
 
             </Col>
-            <Col lg ={{size:'4', offset:'2'}}>
+            <Col md = {{size:6}} lg ={{size:'4', offset:'2'}}>
                 <h2>
                     Miami-Dade
                 </h2>

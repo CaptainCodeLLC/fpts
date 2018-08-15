@@ -20,7 +20,7 @@ p1,p2{
 .company-tagline{
     text-align: center;
     position: relative;
-    z-index: 1!important;
+    z-index: 0!important;
 }
 .carousel-container{
     position: relative;

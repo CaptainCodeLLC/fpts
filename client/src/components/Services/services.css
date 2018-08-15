@@ -1,4 +1,12 @@
 /* Approach Container */
 .emphasis{
-    font-size:3rem;
+    font-size:3.2rem;
+    text-decoration:underline  orange ;
+    text-underline-position: above;
+}
+
+.services-content{
+    font-size:1.2rem;
+    margin: 0;
+    margin-bottom:4px;
 }

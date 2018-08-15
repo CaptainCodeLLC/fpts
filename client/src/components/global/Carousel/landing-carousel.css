@@ -6,8 +6,8 @@
     height:100vh;
     top:0;
     left:0;
-    background: rgba(0, 0, 0,0.55);
-    z-index: 100!important;
+    background: rgba(0, 0, 0,0.75);
+    z-index: 1!important;
 }
 
 .slide-container{
@@ -44,7 +44,7 @@
     font-size:2.8rem;
     color:white;
     position: absolute;
-    z-index: 100!important;
+    z-index: 50!important;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -55,7 +55,7 @@
     font-size:1.5rem;
     color:white;
     position: absolute;
-    z-index: 100!important;
+    z-index: 50!important;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -66,24 +66,30 @@
     color:white!important;
     width:auto;
     position: absolute;
-    z-index: 100!important;
+    z-index: 50!important;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     border-radius: 39px;
     text-align: center;
 }
+
 #text-container button{
-    margin-top:205px;
-    font-size:1rem;
+    margin-top:155px;
+    padding-left:20px; 
+    padding-right:20px; 
+    font-size:1.2rem;
     width:auto;
     position: absolute;
-    z-index: 100!important;
+    z-index: 51!important;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     border-radius: 39px;
     text-align: center;
+}
+.modal-row{
+    margin-bottom:10px;
 }
 
 
