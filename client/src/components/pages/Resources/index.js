@@ -3,6 +3,7 @@ import {Container, Row, Col,Input} from 'reactstrap';
 import './resources.css'
 import ImportantDates from './ImportantDates/';
 import Affiliations from './Affiliations/';
+import ImportantLinks from './ImportantLinks';
 // const routes = [
 //     // Important dates, Affiliations, links
 //     {
@@ -71,15 +72,16 @@ export default class Resources extends Component {
                 Affiliations
             </h1>
           </Col>
+          <br/>
           <Container>
-          <Col lg= '12'>
-            <h3>
-                Memberships
-            </h3>
-          </Col>
           <Row>
             <Affiliations/>
           </Row>
+          <br/>
+          <Row>
+              <ImportantLinks/>
+          </Row>
+          <br/>
         </Container>
       </Container>
     )

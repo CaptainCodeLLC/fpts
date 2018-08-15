@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Row, Col,Container } from 'reactstrap';
-import PropTypes from 'prop-types';
+
 import iaao from './images/iaao.png'
 import ciasf from './images/ciasf-logo.png';
 import gables from './images/coral-gables-logo.png';
@@ -28,39 +28,39 @@ export default class Icon extends Component {
         icon: nptg,
       },
       {
-        title:"IAAO",
-        description: "International Association of Assessing Officers",
-        icon: iaao,
+        title:"CIASF",
+        description: "Commercial Industrial Association of South Florida",
+        icon: ciasf,
       },
       {
-        title:"IAAO",
-        description: "International Association of Assessing Officers",
-        icon: iaao,
+        title:"CGCOC",
+        description: "Coral Gables Chamber of Commerce",
+        icon: gables,
       },
       {
-        title:"IAAO",
-        description: "International Association of Assessing Officers",
-        icon: iaao,
+        title:"Crew Miami",
+        description: "Meeting Warehousing Needs in South Florida",
+        icon: crew,
       },
       {
-        title:"IAAO",
-        description: "International Association of Assessing Officers",
-        icon: iaao,
+        title:"MCOC",
+        description: "Miami Beach Chamber of Commerce",
+        icon: miamiBeach,
       },
       {
-        title:"IAAO",
-        description: "International Association of Assessing Officers",
-        icon: iaao,
+        title:"Greater Miami Hotel Association",
+        description: "Partners in Hospitality",
+        icon: hotel,
       },
       {
-        title:"IAAO",
-        description: "International Association of Assessing Officers",
-        icon: iaao,
+        title:"University of Miami",
+        description: "Alumni Association",
+        icon: um,
       }
 
     ]
     const grid = affiliations.map((affiliate) =>
-      <Col lg = '3'>
+      <Col xs = '6' lg = '3'>
         <IconCard img = {affiliate.icon} title = {affiliate.title} description = {affiliate.description}/>
       </Col>
   )
