@@ -1,4 +1,29 @@
 /* Footer Container */
-.footer-container{
-    background-color:grey;
+.footer-container {
+    background-color: grey;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+  display: table;
+  border-spacing: 15px;
+}
+
+#footer-logo {
+  display: table-cell;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+#footer-address {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#footer-other {
+  text-align: right;
+  vertical-align: middle;
 }
