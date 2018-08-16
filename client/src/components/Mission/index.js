@@ -12,8 +12,8 @@ export default class Mission extends Component {
         <div id = "mission-container">
 
           <Parallax src={team} text="Our Mission" caption = "Your time is valuable - let us do the work."/>
-          <hr/>
-          <div className = "container">
+       
+          <Container>
             <h2>
               Mission/Philosophy
             </h2>
@@ -24,7 +24,7 @@ export default class Mission extends Component {
             <p className = "section-content">
             We have been in the business of reducing real estate and tangible personal property taxes since 1984, handling well over $7.5 billion in real estate annually in Florida. FPTS consistently produces property tax reductions at a rate that outperforms the county-wide industry average.
             </p>
-            </div>
+            </Container>
         </div>
     )
   }

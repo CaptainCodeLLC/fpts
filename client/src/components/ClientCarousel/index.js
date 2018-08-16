@@ -8,7 +8,6 @@ export default class ClientCarousel extends Component {
   render() {
     const settings = {
       autoplay:true,
-      className: "center",
       centerMode: true,
       infinite: true,
       slidesToShow: 1,
@@ -31,7 +30,14 @@ export default class ClientCarousel extends Component {
       'https://s3.amazonaws.com/fpts-images/carmaxLogo.png',
       'https://s3.amazonaws.com/fpts-images/marriot.png',
       'https://s3.amazonaws.com/fpts-images/pandaExpress.png',
-      'https://s3.amazonaws.com/fpts-images/wendys.png'
+      'https://s3.amazonaws.com/fpts-images/wendys.png',
+      'https://s3.amazonaws.com/fpts-images/howardJohnson.png',
+      'https://s3.amazonaws.com/fpts-images/Four_Points_Logo_neu.svg.png',
+      'https://s3.amazonaws.com/fpts-images/edMorse.png',
+      'https://s3.amazonaws.com/fpts-images/goldman.png',
+      'https://s3.amazonaws.com/fpts-images/pep-boys.png',
+      'https://s3.amazonaws.com/fpts-images/graigner-logo.png',
+
     ]
     const company = companies.map((company) => 
     <div>

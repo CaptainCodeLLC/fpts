@@ -31,3 +31,8 @@ Parallax{
   object-fit: cover;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+#mission-container .container{
+  margin-top:40px;
+}

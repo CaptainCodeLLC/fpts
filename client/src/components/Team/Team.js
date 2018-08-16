@@ -88,8 +88,8 @@ export default class Team extends Component {
     return (
       <div>
         <Parallax src = {team} text = "The FPTS Team"/>
-          <hr/>
-          <Container>
+
+          <Container id = "team-grid">
           <Row className = "team-container">
             {TeamGrid1}
           </Row>

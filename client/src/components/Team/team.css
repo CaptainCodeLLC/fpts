@@ -17,3 +17,6 @@
 .parallax-slider img{
     position: relative!important;
 }
+#team-grid{
+    margin-top:40px;
+}
