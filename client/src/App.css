@@ -1,18 +1,13 @@
-html{
-    height:100%;
-}
 body {
     margin-top:76px;
     padding:0;
-    height:100%;
+    width:auto;
+    min-height: 100vh;
     font-family: 'Raleway', sans-serif;
 }
 
-h1,h2,h3 {
-  font-family: 'Roboto', sans-serif;
-}
 
-p1,p2{
+text {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -39,12 +34,6 @@ div.newsletter-container{
     height:40px;
     text-align: center;
 }
-
-
-
-
-
-
 
 
 /* Testimonial Section */

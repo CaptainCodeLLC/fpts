@@ -42,11 +42,10 @@ export default class Contact extends Component {
     return (
       <Container className = "contact-form">
         <Row>
-          <Col lg='6'>
+          <Col md = {{size :4}} lg='6'>
             <img style={{ maxHeight: '500px' }} src={iPhone} />
           </Col>
-          <Col lg='5'>
-
+          <Col md ={{ size:4, offset:1}} lg='5'>
             <h1>Contact Us</h1>
             <hr />
             <Form>

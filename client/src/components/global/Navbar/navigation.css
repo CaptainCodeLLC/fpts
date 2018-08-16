@@ -2,10 +2,11 @@
     position: fixed;
     top:0;
     left:0;
-    width:100%;
+    width:99vw;
     background:rgba(74, 75, 77, 1);
     height:76px;
     z-index: 100!important;
+    padding: 0;
 }
 
 .toolbar_logo img {
@@ -19,7 +20,8 @@
    display: flex;
    align-items:center;
    height:100%;
-   padding:0 1rem;
+   padding:0;
+   width:100%;
 }
 
 .toolbar-navigation-items a {

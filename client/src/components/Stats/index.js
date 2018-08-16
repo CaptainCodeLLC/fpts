@@ -18,7 +18,7 @@ export default class Stats extends Component {
           </Col>
         <Col lg = '3' className = "stats-container">
           <div className = "stats-text-container">
-          <CountUp className ="count-text" start={0} end={500} duration= {3} />
+          <CountUp className ="count-text" start={0} end={160526} duration= {3} />
           <h1>Clients serviced</h1>
           </div>
         </Col>

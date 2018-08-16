@@ -3,6 +3,7 @@ import WebRouter from './WebRouter';
 import Navigation from './components/global/Navbar/navigation';
 import SideDrawer from './components/global/sideDrawer/sideDrawer';
 import Backdrop from './components/global/Backdrop/Backdrop';
+import Footer from './components/global/Footer/footer2';
 
 
 class App extends Component {
@@ -31,11 +32,12 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
+      <div className="App content">
         <Navigation drawerClickHandler = {this.drawerToggleClickHandler}/>
         <SideDrawer show= {this.state.open}/>
         {backdrop}
         <WebRouter/>
+        <Footer className = "footer"/>
       </div>
     );
   }

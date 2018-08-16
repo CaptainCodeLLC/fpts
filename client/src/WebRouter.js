@@ -18,6 +18,6 @@ const WebRouter = () => (
         <Route exact path = "/service_fees" component = {ServiceFees}/>
     </Switch>
     
-);
+);  
 
 export default WebRouter;
