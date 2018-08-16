@@ -1,0 +1,49 @@
+.real-estate-overlay{
+    position: relative;
+    width:100%;
+    height:400px;
+    top:0;
+    left:0;
+   
+    background:  no-repeat linear-gradient(
+        rgba(20,20,20, .4), 
+        rgba(20,20,20, .7),
+        rgba(19,10,10, .35)),
+        url(./images/realEstate.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5!important;
+}
+
+
+.real-estate-text{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size:3.3rem;
+    box-shadow: 1px;
+}
+
+.real-estate-content{
+    margin-top:35px;
+}
+.v-slide{
+    background-color:orange; 
+    text-align: center;
+    color:white;
+    min-height: 120px;
+}
+
+.slide-text{
+    padding-top:40px;
+}
+
+.list-group-item:hover{
+    color:orange;
+}
+.list-group-item-heading{
+    font-size:1rem;
+}

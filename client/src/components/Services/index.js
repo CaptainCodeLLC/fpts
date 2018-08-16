@@ -96,6 +96,11 @@ export default class Services extends Component {
           <Row>
             {CardObj}
           </Row>
+
+          <p className = "section-content"><span className = "emphasis"> What will you pay for our services?</span><br/>
+          While we charge a nominal $20 per folio processing fee, you pay nothing more unless we are successful in obtaining a property tax reduction for you. <strong>NO REDUCTION = NO ADDITIONAL FEE</strong>
+          </p>
+          <p className = "section-content"><a href="service_fees"> Service Fees</a></p>
           
         </Container>
       </div>

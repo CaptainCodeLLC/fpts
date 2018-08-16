@@ -7,13 +7,14 @@ import './client_carousel.css';
 export default class ClientCarousel extends Component {
   render() {
     const settings = {
+      autoplay:true,
       className: "center",
       centerMode: true,
       infinite: true,
       slidesToShow: 1,
       speed: 500,
       rows: 2,
-      arrows:true,
+      arrows:false,
       dots:true,
       slidesPerRow: 3
     };
@@ -38,13 +39,13 @@ export default class ClientCarousel extends Component {
     </div>
     )
     return (
-      <Container>
-        <h1>Who we serve</h1>
+      <Container style = {{marginBottom: '60px',textAlign:'center'}}>
+        <h1 className = "testimonial-header">Who We Serve</h1>
+        <hr/>
         <Slider {...settings}>
           {company}
         </Slider>
       </Container>
-    // </div>
     );
   }
 }

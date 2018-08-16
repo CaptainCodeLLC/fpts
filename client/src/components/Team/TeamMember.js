@@ -1,42 +1,41 @@
 import React, { Component } from 'react';
-import {Card, CardImg, CardBody, CardTitle, CardSubtitle, ButtonDropdown,DropdownToggle, DropdownMenu,DropdownItem} from 'reactstrap';
-
+import {Card, CardImg, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
+import './team.css'
+import { isThisSecond } from 'date-fns';
 export default class TeamMember extends Component {
     constructor(props){
         super(props);
-        this.toggle = this.toggle.bind(this);
         this.state = {
-          dropDownOpen:false
+          isExpanded:false
         };
       }
 
-      toggle(){
+      handleToggle(e){
+          e.preventDefault();
           this.setState({
-              dropDownOpen:!this.state.dropDownOpen
+              isExpanded:!this.state.isExpanded
           });
       }
+   
 
   render() {
+      const {isExpanded} = this.state;
     return (
-      <div>
-         <Card style ={{marginBottom:'15px'}}>
-            <CardImg style ={{height:'10%'}}top  src={this.props.image} alt="Card image cap" />
+      <div >
+         <Card  style ={{marginBottom:'15px'}}>
+            <CardImg  style ={{height:'10%'}} src={this.props.image} alt="Card image cap" />
             <CardBody style = {{textAlign:'center'}}>
                 <CardTitle>{this.props.name}</CardTitle>
                 <CardSubtitle style ={{marginBottom:10}}>{this.props.role}</CardSubtitle>
                 <CardSubtitle style ={{marginRight:10}}>{this.props.role2}</CardSubtitle>
-                  <ButtonDropdown  isOpen={this.state.dropDownOpen} onClick={this.toggle}>
+                <br/>
+                 
 
-                <DropdownToggle style = {{ borderRadius:50, marginTop:'10px'}}caret color = "success">
-                Learn more
-                </DropdownToggle>
-                <DropdownMenu>
-                    <DropdownItem header>
-                        {this.props.bio}
-                    </DropdownItem>
-
-                </DropdownMenu>
-                </ButtonDropdown>
+               
+                <CardSubtitle>
+                    <p className ={`team-bio${isExpanded ?'-is-expanded':''}`}>{this.props.bio}</p>
+                </CardSubtitle>
+                <Button color="success" onClick = {(e)=> this.handleToggle(e)} >More Info</Button>
             </CardBody>
         </Card>
       </div>

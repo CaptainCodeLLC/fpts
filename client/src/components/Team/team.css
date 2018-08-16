@@ -1,5 +1,19 @@
 /* Team */
 .team-container{
     display:flex;
-    justify-content: space-around;
+}
+
+.team-bio{
+    display:none;
+ }
+ 
+.team-bio-is-expanded{
+    font-size:.9rem;
+    text-align: left;
+    display: block;
+    position: relative;
+}
+
+.parallax-slider img{
+    position: relative!important;
 }

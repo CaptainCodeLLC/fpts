@@ -1,6 +1,6 @@
 /* Footer Container */
 .footer-container {
-    background-color: grey;
+    background-color: rgba(74, 75, 77, 1);
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -9,13 +9,13 @@
 .footer-item {
   display: table;
   border-spacing: 15px;
+  color:white;
 }
 
-#footer-logo {
+#footer-logo img {
   display: table-cell;
-  width: 100px;
-  height: 100px;
-  background-color: white;
+  max-width: auto;
+  height: 80px;
 }
 
 #footer-address {
@@ -27,3 +27,4 @@
   text-align: right;
   vertical-align: middle;
 }
+

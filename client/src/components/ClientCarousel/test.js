@@ -38,9 +38,9 @@ export default class ClientCarousel extends Component {
     }
 
     return (
-      <div /*style = {{backgroundColor:'darkgrey'}}*/>
-        <Container>
-          <h1>Who we serve</h1>
+      <div>
+        <Container style = {{textAlign:'center'}}>
+            <h1>Who we serve</h1>
           <br/>
           <Row>
             {companyGrid}

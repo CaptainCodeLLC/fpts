@@ -1,0 +1,16 @@
+.tpp-overlay{
+    position: relative;
+    width:100%;
+    height:400px;
+    top:0;
+    left:0;
+   
+    background:  no-repeat linear-gradient(
+        rgba(20,20,20, .4), 
+        rgba(20,20,20, .7),
+        rgba(19,10,10, .35)),
+        url(./images/tangible-property.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5!important;
+}

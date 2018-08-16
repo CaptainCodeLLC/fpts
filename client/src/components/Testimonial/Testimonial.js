@@ -49,9 +49,7 @@ export default class Testimonial extends Component {
 
     return (
       <Container>
-          <h1 style ={{width:'20%'}}>What Our<br/>
-             Clients <br/>
-             Say
+          <h1 style ={{width:'40%'}}>What Our Clients Say
              <hr style ={{borderWidth:'6px', borderColor:'orange'}}/>
              </h1>
              <br/>

@@ -32,6 +32,7 @@
 .parallax-window{
   min-height:370px;
   background: transparent;
+  position: relative;
 }
 
 .section-content{
