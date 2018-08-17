@@ -1,6 +1,7 @@
 import React from 'react';
 import './navigation.css';
 import DrawerToggle from '../sideDrawer/drawerToggle';
+import {DropdownToggle, UncontrolledDropdown, DropdownItem, DropdownMenu} from 'reactstrap'
 
 const toolbar = props => (
     <header className = "toolbar">
@@ -23,6 +24,20 @@ const toolbar = props => (
                         <a href="/resources">Resources</a>
                     </li>
                     
+                    <li>
+                        
+                            <UncontrolledDropdown setActiveFromChild>
+                            <DropdownToggle style = {{padding:0}}  className="nav-link">
+                                Services
+                            </DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem tag="a" href="/blah" active>Real Estate</DropdownItem>
+                                <hr style = {{color:'orange',margin:0}}/>
+                                <DropdownItem tag="a" href="/tangible_personal_property" active>Tangible Personal Property</DropdownItem>
+                            </DropdownMenu>
+                            </UncontrolledDropdown>
+                     
+                    </li>
                     <li>
                         <a href="/about">About</a>
                     </li>

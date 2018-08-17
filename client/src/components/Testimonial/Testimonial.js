@@ -42,16 +42,19 @@ export default class Testimonial extends Component {
       <TestimonialCard name = {client.clientName}
                       image = {client.clientPicture}
                       review = {client.review}
-                      verticalLine = {client.verticalLine}
+                      // verticalLine = {client.verticalLine}
                       link = {client.link}/>
 
   )
 
     return (
       <Container>
-          <h1 style ={{width:'40%'}}>What Our Clients Say
-             <hr style ={{borderWidth:'6px', borderColor:'orange'}}/>
-             </h1>
+          <Col xs = "12" lg = "12">
+            <h2>
+              What Our Clients Say
+            </h2>
+             <hr style ={{borderWidth:'1px', borderColor:'orange'}}/>
+             </Col>
              <br/>
           <Row>
 

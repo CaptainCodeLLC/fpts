@@ -42,10 +42,10 @@ export default class Contact extends Component {
     return (
       <Container className = "contact-form">
         <Row>
-          <Col md = {{size :4}} lg='6'>
-            <img style={{ maxHeight: '500px' }} src={iPhone} />
+          <Col sm = "12" md = {{size :4}} lg='4'>
+            <img style={{ maxHeight: '470px' }} src={iPhone} />
           </Col>
-          <Col md ={{ size:4, offset:1}} lg='5'>
+          <Col sm = {{size: 12, offset:0}} md ={{ size:11, offset:1}} lg={{size:'5', offset:'2'}}>
             <h1>Contact Us</h1>
             <hr />
             <Form>
@@ -104,7 +104,7 @@ export default class Contact extends Component {
                 onChange={e => this.handleChange(e)}
               />
 
-              <Col lg="3" className = "contact-button-container">
+              <Col style = {{textAlign:'center'}}lg="3" className = "contact-button-container">
                 <Button className = "contact-button" color="success" onClick={(e) => this.handleSubmit(e)}> Submit </Button>
               </Col>
 

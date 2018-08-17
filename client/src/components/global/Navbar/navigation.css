@@ -1,8 +1,8 @@
-.toolbar{
+header.toolbar{
     position: fixed;
     top:0;
     left:0;
-    width:100vw;
+    width:99vw;
     background:rgba(74, 75, 77, 1);
     height:76px;
     z-index: 100!important;
@@ -20,8 +20,8 @@
    display: flex;
    align-items:center;
    height:100%;
-   padding:0;
    width:100%;
+   padding:0;
    margin: 0 1rem;
 }
 
@@ -38,7 +38,7 @@
     display: flex;
 }
 .toolbar-navigation-items{
-  margin-right: 2%;
+  margin-right: 4%;
 }
 .toolbar-navigation-items li {
   margin-left: 20px;
@@ -46,6 +46,30 @@
 .toolbar-navigation-items a:hover,
 .toolbar-navigation-items a:active {
     color:#FEB032;
+}
+.dropdown-menu{
+    padding:0;
+}
+
+.active.dropdown{
+    background-color:none; 
+    color:#FEB032;
+}
+
+.btn-secondary:hover{
+    color:#FEB032;
+    background-color:transparent;
+    border-color:transparent;
+}
+.btn-secondary{
+    color:#fff;
+    background-color:transparent;
+    border-color:transparent;
+}
+
+a.dropdown-item.active{
+    background-color:rgb(58, 58, 58);
+    padding:.40rem;
 }
 
 .spacer{

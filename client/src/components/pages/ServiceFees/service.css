@@ -1,0 +1,19 @@
+.services-header
+{    margin-top:20px;
+    margin-bottom:0;
+}
+
+.table-header-text{
+    font-size:1.7rem;
+}
+
+.table td {
+    padding:.40rem;
+}
+
+.services-container{
+    background-color:#f1f1f1;
+}
+.table-striped{
+    color:#171717;
+}

@@ -3,7 +3,7 @@ import WebRouter from './WebRouter';
 import Navigation from './components/global/Navbar/navigation';
 import SideDrawer from './components/global/sideDrawer/sideDrawer';
 import Backdrop from './components/global/Backdrop/Backdrop';
-import Footer from './components/global/Footer/footer2';
+import Footer from './components/global/Footer/';
 
 
 class App extends Component {

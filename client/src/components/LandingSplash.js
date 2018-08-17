@@ -7,7 +7,7 @@ import Stats from './Stats/';
 import ClientCarousel from './ClientCarousel/';
 import Testimonial from './Testimonial/Testimonial';
 import Contact from './Contact/';
-import Footer from './global/Footer/';
+
 
 
 export default class LandingSplash extends Component {
@@ -22,7 +22,7 @@ export default class LandingSplash extends Component {
             <br/>
             <Team/>
             <br/>
-            <Stats/>
+            {/* <Stats/> */}
             <br/>
             <ClientCarousel/>
             <br/>

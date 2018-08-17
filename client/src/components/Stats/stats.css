@@ -1,19 +1,21 @@
 .stats-text-container {
     width:100%;
     margin: 0;
+    padding: 0;
     top: 50%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .count-text{
     color:white;
     font-size: 2rem;
 }
 .stats-container{
     min-height: 320px;
-    background-color:orange;
+    background-color:rgb( 254,176,50);
     text-align: center;
-    border-right: solid black 2px;
+    margin:0;
 
 }
