@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import Modal from './modal';
 
 export default class Slide extends React.Component {
@@ -23,7 +22,7 @@ export default class Slide extends React.Component {
       <div className = "slide-container">
           <header className = "overlay"/>
           <div className = "carousel-img">
-              <img src = {this.props.img}/>
+              <img alt = "" src = {this.props.img}/>
               <div id = "text-container">
                   <div>
                     <h1>Florida Property Tax Service</h1>

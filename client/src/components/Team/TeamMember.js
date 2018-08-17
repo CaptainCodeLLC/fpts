@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Card, CardImg, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
-import './team.css'
-import { isThisSecond } from 'date-fns';
+import './team.css';
 export default class TeamMember extends Component {
     constructor(props){
         super(props);

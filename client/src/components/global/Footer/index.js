@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import { Row, Container, Col, Input, Button } from 'reactstrap';
+import React, { Component } from 'react';
 import './footer.css';
 export default class Footer extends Component {
     render() {
@@ -58,8 +57,7 @@ export default class Footer extends Component {
                          Captain Code
                     </a>
                     </p>
-                
-            </div>
+                </div>
             </div>
         );
     }

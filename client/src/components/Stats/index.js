@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import {Container,Row,Col} from 'reactstrap';
+import {Row,Col} from 'reactstrap';
 import CountUp from 'react-countup';
-import Parallax  from '../global/parallax/Parallax';
-import stats from './images/stats.jpg'
 import './stats.css';
 
 export default class Stats extends Component {

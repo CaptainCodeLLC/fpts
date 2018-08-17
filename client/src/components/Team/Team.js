@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {Container, Col, Row, Card, CardImg,CardBody, CardTitle, CardSubtitle} from 'reactstrap';
+import {Container, Col, Row} from 'reactstrap';
 import TeamMember from './TeamMember';
 import ronald from './images/ronald.jpg';
 import m1 from './images/m1.jpg';

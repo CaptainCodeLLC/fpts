@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Row,Col, Contaienr} from 'reactstrap';
+import {Row,Col} from 'reactstrap';
 
 import './important-links.css'
 

@@ -3,7 +3,6 @@ import Slider from './global/Carousel/Carousel'
 import Mission from './Mission/';
 import Services from './Services/';
 import Team from './Team/Team';
-import Stats from './Stats/';
 import ClientCarousel from './ClientCarousel/';
 import Testimonial from './Testimonial/Testimonial';
 import Contact from './Contact/';
