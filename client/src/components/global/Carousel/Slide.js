@@ -30,7 +30,7 @@ export default class Slide extends React.Component {
               </div>
               <div id = "text-container">
                   <div>
-                    <p>Saving Millions for Our Clients Every Year </p>
+                    <p>Saving Millions for Our Clients Every Year</p>
                   </div>
                   <Modal style = {{zIndex:"5!important"}} buttonLabel = "Join our newsletter" className = "modal"/>
                 </div>
