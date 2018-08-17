@@ -32,12 +32,15 @@ class App extends Component {
     }
 
     return (
-      <div className="App content">
+      <div>
+      <div className="App">
         <Navigation drawerClickHandler = {this.drawerToggleClickHandler}/>
         <SideDrawer show= {this.state.open}/>
         {backdrop}
         <WebRouter/>
+        </div>
         <Footer className = "footer"/>
+      
       </div>
     );
   }

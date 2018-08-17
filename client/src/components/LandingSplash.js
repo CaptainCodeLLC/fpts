@@ -29,7 +29,6 @@ export default class LandingSplash extends Component {
             <Testimonial/>
             <br/>
             <Contact/>
-           
         </div>
     )
   }

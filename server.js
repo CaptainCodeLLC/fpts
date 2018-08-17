@@ -7,11 +7,22 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
-
+const morgan = require('morgan');
 
 //Init the application with express
 const app = express();
+const db = require('./config/keys').mongoURI;
+
+const users = require('./routes/api/user');
+
+//connect to MongoDB mLab
+mongoose.connect(db, { useNewUrlParser: true })
+        .then(() => console.log("MongoDB connected"))
+        .catch(err => console.log(err)); 
+
+app.use(morgan('short'))
 const port = process.env.PORT || process.env.DEV_PORT;
+
 // Body parser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -20,8 +31,10 @@ app.use(bodyParser.urlencoded({
 
 
 //user routes
+
+require('./routes/api/user')(app)
 require('./models/User');
-require('./routes/api/user')(app);
+
 
 
 app.listen(port, (err) => {
@@ -29,19 +42,11 @@ app.listen(port, (err) => {
   console.log(`Server started on port ${port}`)
 });  
 
+app.get('/' , (req,res)=>{
+  res.send("Welcome to the FPTS Backend")
+})
 
-
-/********************
-  * START MONGOOSE
- ********************/
-mongoose.Promise = Promise;
-mongoose.connect(
-  keys.MONGODB_URI, {
-    useNewUrlParser: true
-  }
-);
-mongoose.set('debug', true);
-
+// app.use('/api/users', users)
 
 /*********************
  PRODUCTION ENVIRONMENT

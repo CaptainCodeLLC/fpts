@@ -2,6 +2,7 @@
 .footer-container-global{
   display: flex;
   flex-direction: column;
+  
 }
 #footer-container-content {
     background-color: rgba(74, 75, 77, 1);
