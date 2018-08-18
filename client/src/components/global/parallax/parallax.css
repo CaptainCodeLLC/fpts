@@ -11,7 +11,7 @@
   font-size:3.5rem;
   text-align: center;
   color:white;
-  top:120px;
+
 }
 .parallax-caption{
   z-index:3;
@@ -19,7 +19,7 @@
   font-size:1.3rem;
   text-align: center;
   color:white;
-  top:100px;
+
 }
 
 .parallax-text-container{
@@ -27,18 +27,13 @@
   position: relative;
   width:100%;
   height:370px;  
-  
   background-attachment: absolute;
-  background-color: rgba(10,10,10,0.7);
-
-}
-.parallax-window{
-  min-height:370px;
-  background: transparent;
-  position: relative;
-  background-attachment:fixed; 
+  background-color: rgba(10,10,10,0.8);
 }
 
 .section-content{
   font-size:1.3rem;
+}
+p.section-content{
+  
 }

@@ -7,7 +7,9 @@ export default class Footer extends Component {
                 <div style ={{margin:0}} id="footer-container-content">     
                         <div className="footer-item">
                             <div id="footer-logo">
+                            <a href="/">
                                 <img src="https://s3.amazonaws.com/fpts-images/fpts_logo.png" alt="" />
+                            </a>
                             </div>
                             {/* <div style = {{textAlign:'center', fontSize:'20px' }}>
                                 <a href="https://www.facebook.com/PropertyTaxReductions/"><i className="fab fa-facebook-f"></i></a>

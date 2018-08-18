@@ -1,41 +1,11 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Nav, NavLink, ListGroup, ListGroupItem, ListGroupItemHeading } from 'reactstrap';
+import { Container, Row, Col, Nav, NavLink, Table, ListGroupItem, ListGroupItemHeading } from 'reactstrap';
 import './tangible-personal-property.css';
 
 
 export default class RealEstate extends Component {
 
     render() {
-        const specializations = [
-            'Machinery',
-            'Equipment',
-            'Furniture & Fixtures',
-            'Manufacturing',
-            'Construction',
-            'Professional Equipment',
-            'Hospitals',
-            'IT/Networks',
-            'Nursery/Farm',
-            'Restaurants',
-            'Financial Institutions',
-            'Auto Dealerships',
-            'Medical Industry',
-            'Plants & Factories',
-            'Auto Dealerships',
-            'Law Offices',
-            'Distribution Centers',
-            'Retailers',
-            'Import/Export Wholesalers'
-        ]
-
-        const specializationList = specializations.map((category) =>
-            <ListGroupItem >
-                <ListGroupItemHeading>{category}</ListGroupItemHeading>
-                {/* <ListGroupItemText>
-                Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-             </ListGroupItemText> */}
-            </ListGroupItem>
-        )
         return (
             <div>
                 <div className="tpp-overlay">
@@ -48,8 +18,8 @@ export default class RealEstate extends Component {
                             <Nav vertical>
                                 Navigation
                         <NavLink href="#">Services</NavLink>
-                                <NavLink href="#">Strategies</NavLink>
-                                <NavLink href="#">Specializations</NavLink>
+                                <NavLink href="#strategy">Strategy</NavLink>
+                                <NavLink href="#tpp_specializations">Specializations</NavLink>
                             </Nav>
                         </Col>
                         <Col>
@@ -62,22 +32,62 @@ export default class RealEstate extends Component {
                             <p>
                             FPTS steadily achieves a high rate of success in reducing TPP taxes for our clients.
                             </p>
-                            <h1>
+                            <h1 id = "strategy">
                                 Our Strategy
                         </h1>
                             <p>
-                            We handle all phases of the appeal process for you including tangible return rendering, timely appeal filing, site inspection, coordinating appraisals, case preparation and hearing representation
-                        </p>
-                            <h1>
+                                We handle all phases of the appeal process for you including tangible return rendering, timely appeal filing, site inspection, coordinating appraisals, case preparation and hearing representation
+                            </p>
+                            <h1 id = "tpp_specializations">
                                 Specialization
                         </h1>
                             <p>
                                 Also known as Business Personal Property, TPP includes machinery, equipment, furniture and fixtures in the following areas and categories:
                             </p>
 
-                            <ListGroup style ={{marginBottom:'20px'}}>
-                                {specializationList}
-                            </ListGroup>
+                               <Table striped bordered>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Machinery</h4></td>
+                                        <td colSpan= '6'><h4>Equipment</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Furniture & Fixtures</h4></td>
+                                        <td colSpan= '6'><h4>Manufacturing</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Construction</h4></td>
+                                        <td colSpan= '6'><h4>Professional Equipment</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Hospitals</h4></td>
+                                        <td colSpan= '6'><h4>IT/Networks</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Nursery/Farm</h4></td>
+                                        <td colSpan= '6'><h4>Restaurants</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Financial Institutions</h4></td>
+                                        <td colSpan= '6'><h4>Auto Dealerships</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Medical Industry</h4></td>
+                                        <td colSpan= '6'><h4>Plants & Factories</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Law Offices</h4></td>
+                                        <td colSpan= '6'><h4>Distribution Centers</h4></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td colSpan= '6'><h4>Retailers</h4></td>
+                                        <td colSpan= '6'><h4>Import/Export Wholesalers</h4></td>
+                                    </tr>
+                    
+                                </tbody>
+                            </Table>
                         </Col>
                     </Row>
                 </Container>

@@ -1,40 +1,13 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Nav, NavLink, ListGroup, ListGroupItem, ListGroupItemHeading } from 'reactstrap';
+import { Container, Row, Col, Nav, NavLink, Table } from 'reactstrap';
 import './real-estate.css';
 
 
 export default class RealEstate extends Component {
 
-    render() {
-        const specializations = ['ACLFs',
-            'Hospitals',
-            'Apartment Complexes',
-            'Auto Dealerships',
-            'Commercial Properties',
-            'Condominiums',
-            'Fast Food',
-            'Financial Institutions',
-            'Hotels and Motels',
-            'Industrial and Manufacturing',
-            'Mobile Home Parks',
-            'Office Buildings',
-            'Recreational Facilities',
-            'Restaurants',
-            'Shopping Centers',
-            'Other Special Purpose',
-            'Vacant Land',
-            'Warehouses'
-        ]
-
-        const specializationList = specializations.map((category) =>
-            <ListGroupItem >
-                <ListGroupItemHeading>{category}</ListGroupItemHeading>
-                {/* <ListGroupItemText>
-                Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-             </ListGroupItemText> */}
-            </ListGroupItem>
-        )
-        return (
+render(){
+    
+    return (
             <div>
                 <div className="real-estate-overlay">
                     <h1 className="real-estate-text">Real Estate</h1>
@@ -64,15 +37,51 @@ export default class RealEstate extends Component {
                                 We find reduction opportunities through analysis of historical real estate data and market trends combined with evaluation of specific conditions relating to your property. FPTS maximizes the potential for assessment reductions by utilizing in-depth research, advanced technologies, and well-developed case-building techniques.
                         </p>
                             <h1>
-                                Specialization
+                                Specializations
                         </h1>
                             <p>
                                 We successfully build cases for a variety of property types including, but not limited to:
                     </p>
 
-                            <ListGroup style ={{marginBottom:'20px'}}>
-                                {specializationList}
-                            </ListGroup>
+                            <Table striped bordered>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Hospitals</h4></td>
+                                        <td colSpan= '6'><h4>Apartment Complexes</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Auto Dealerships</h4></td>
+                                        <td colSpan= '6'><h4>Commercial Properties</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Condominiums</h4></td>
+                                        <td colSpan= '6'><h4>Fast Food</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Financial Institutions</h4></td>
+                                        <td colSpan= '6'><h4>Hotels and Motels</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Industrial and Manufacturing</h4></td>
+                                        <td colSpan= '6'><h4>Mobile Home Parks</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Office Buildings</h4></td>
+                                        <td colSpan= '6'><h4>Recreational Facilities</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Restaurants</h4></td>
+                                        <td colSpan= '6'><h4>Shopping Centers</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan= '6'><h4>Warehouses</h4></td>
+                                        <td colSpan= '6'><h4>Vacant Land</h4></td>
+                                    </tr>
+                                    
+                    
+                                </tbody>
+                            </Table>
                         </Col>
                     </Row>
                 </Container>

@@ -25,7 +25,7 @@ export default class Slide extends React.Component {
               <img alt = "" src = {this.props.img}/>
               <div id = "text-container">
                   <div>
-                    <h1>Florida Property Tax Service</h1>
+                    <h1 id = "splash-text">Florida Property Tax Service</h1>
                   </div>
               </div>
               <div id = "text-container">

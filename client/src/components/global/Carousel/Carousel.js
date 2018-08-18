@@ -14,7 +14,7 @@ import traffic from './images/traffic.jpg';
 export default class Carousel extends React.Component {
   render() {
     var settings = {
-      dots: true,
+      dots: false,
       autoplay:true,
       autoplaySpeed:5000,
       infinite: true,
@@ -26,18 +26,17 @@ export default class Carousel extends React.Component {
     };
     return (
         <div>
-        <Slider {...settings}>
-          <Slide img = {miamiSkyline}/>
-          <Slide img = {rooftop}/>
-          <Slide img = {parkingGarage}/>
-          <Slide img = {traffic}/>
-          <Slide img = {sunrise}/>
-          <Slide img = {parkingGarage1}/>
-          <Slide img = {sunset}/>
-          
-        </Slider>
+          <Slider {...settings}>
+            <Slide img = {miamiSkyline}/>
+            <Slide img = {rooftop}/>
+            <Slide img = {parkingGarage}/>
+            <Slide img = {traffic}/>
+            <Slide img = {sunrise}/>
+            <Slide img = {parkingGarage1}/>
+            <Slide img = {sunset}/>
+            
+          </Slider>
         </div>
-
     );
   }
 }

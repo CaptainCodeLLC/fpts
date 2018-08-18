@@ -7,7 +7,7 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <Parallax text= "About FPTS" src = {about}/>
+        <Parallax topOffset = {100} text= "About FPTS" src = {about}/>
         <Container className= "about-container">
           <h1>
             <strong>Appealing Property Taxes Since 1984</strong>

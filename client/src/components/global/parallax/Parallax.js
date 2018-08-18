@@ -2,13 +2,15 @@ import React from 'react';
 import './parallax.css'
 
 const Parallax = props => {
-    return (
+  const xOffset = props.topOffset
+  return (
+    
     <div className="parallax-window" data-z-index= "0"data-parallax="scroll" data-image-src={props.src}>
       <div className = "parallax-text-container">
-        <p className = "parallax-header">
+        <p style = {{top:xOffset}} className = "parallax-header">
             {props.text}
         </p>
-        <p className = "parallax-caption">
+        <p style = {{top:xOffset}} className = "parallax-caption">
           {props.caption}
         </p>
       </div>

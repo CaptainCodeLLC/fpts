@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Container, Row, Col,Card, CardBody,CardTitle, CardSubtitle, Button} from 'reactstrap';
-import coastline from './images/coastline.jpg';
+import machinery from './images/machinery.jpg';
 import downtownNighttime from './images/downtownNighttime.jpg';
 import './services.css'
 import Parallax from '../global/parallax/Parallax';
@@ -13,14 +13,14 @@ export default class Services extends Component {
       cardSubtitle:"Commercial and Residential Property",
       cardImage:downtownNighttime,
       cardText:"",
-      link: "/real_estate_property",
+      link: "/services/real-estate",
     },
     {
       cardTitle:"Tangible Personal Property",
       cardSubtitle:"Protect what you care about",
-      cardImage:coastline,
+      cardImage:machinery,
       cardText:"",
-      link:"/tangible_personal_property",
+      link:"/services/tangible-personal-property",
     },
 
     ]
@@ -43,7 +43,7 @@ export default class Services extends Component {
 
     return (
       <div>
-          <Parallax src = {downtownNighttime} caption= "Innovative • Thorough • Effective" text = 'Approach and Services'/>
+          <Parallax topOffset={90} src = {downtownNighttime} caption= "Innovative • Thorough • Effective" text = 'Approach and Services'/>
         <Container>
           <br/>
         <p className = "section-content"> <span className = "emphasis">Approach</span></p>
@@ -96,9 +96,12 @@ export default class Services extends Component {
           <Row>
             {CardObj}
           </Row>
+          <br/>
 
           <p className = "section-content"><span className = "emphasis"> What will you pay for our services?</span><br/>
+          <hr style = {{marginTop:0}}/>
           While we charge a nominal $20 per folio processing fee, you pay nothing more unless we are successful in obtaining a property tax reduction for you. <strong>NO REDUCTION = NO ADDITIONAL FEE</strong>
+         
           </p>
           <p className = "section-content"><a href="service_fees"> Service Fees</a></p>
           

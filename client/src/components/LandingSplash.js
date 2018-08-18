@@ -6,6 +6,7 @@ import Team from './Team/Team';
 import ClientCarousel from './ClientCarousel/';
 import Testimonial from './Testimonial/Testimonial';
 import Contact from './Contact/';
+import News from './pages/News_Notes';
 
 
 
@@ -13,8 +14,12 @@ export default class LandingSplash extends Component {
   render() {
     return (
         <div>
+          <div id ="news"/>
             <Slider className ="carousel"/>
-            <br/>
+            
+            <div style = {{backgroundColor:"#FEB032" ,height:'10px'}}/>
+            <News  style = {{marginBottom:'15px'}}/>
+            <div id = "mission"/>
             <Mission/>
             <br/>
             <Services/>
@@ -26,7 +31,7 @@ export default class LandingSplash extends Component {
             <ClientCarousel/>
             <br/>
             <Testimonial/>
-            <br/>
+            <br id = "contact"/>
             <Contact/>
         </div>
     )

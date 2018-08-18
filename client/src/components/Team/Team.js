@@ -87,7 +87,7 @@ export default class Team extends Component {
 
     return (
       <div>
-        <Parallax src = {team} text = "The FPTS Team"/>
+        <Parallax  topOffset={90} src = {team} text = "The FPTS Team"/>
 
           <Container id = "team-grid">
           <Row className = "team-container">

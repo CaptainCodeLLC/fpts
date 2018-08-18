@@ -13,8 +13,8 @@ const WebRouter = () => (
         <Route exact path = "/resources" component = {Resources}/>
         <Route exact path = "/news_notes" component = {News}/>
         <Route exact path = "/about" component = {About}/>
-        <Route exact path = "/real_estate_property" component = {RealEstate}/>
-        <Route exact path = "/tangible_personal_property" component = {TangiblePersonalProperty}/>
+        <Route exact path = "/services/real-estate" component = {RealEstate}/>
+        <Route exact path = "/services/tangible-personal-property" component = {TangiblePersonalProperty}/>
         <Route exact path = "/service_fees" component = {ServiceFees}/>
     </Switch>
     
