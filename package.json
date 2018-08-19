@@ -25,7 +25,7 @@
   "scripts": {
     "client-install": "cd client && yarn install",
     "start": "node server.js",
-    "heroku-postbuild": "cd client && yarn && yarn run build",
+    "heroku-postbuild": "cd client && yarn && yarn install --only=dev --no-shrinkwrap && yarn run build",
     "server": "nodemon server.js",
     "client": "cd client && yarn start",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
