@@ -25,7 +25,7 @@ export default class Footer extends Component {
                     </div>
                         <div style = {{marginTop: '3px',textAlign:'center', fontSize:'25px'}}>
                             <a href="https://www.facebook.com/PropertyTaxReductions/"><i className="fab fa-facebook-f" style = {{marginRight:'20px'}}></i></a>
-                            <a href="https://www.facebook.com/PropertyTaxReductions/"><i className="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/reduceproptaxes"><i className="fab fa-twitter"></i></a>
                         </div>
                     </div>  
                      <div className="footer-item">
