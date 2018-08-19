@@ -42,9 +42,9 @@ app.listen(port, (err) => {
   console.log(`Server started on port ${port}`)
 });  
 
-app.get('/' , (req,res)=>{
-  res.send("Welcome to the FPTS Backend")
-})
+// app.get('/' , (req,res)=>{
+//   res.send("Welcome to the FPTS Backend")
+// })
 
 // app.use('/api/users', users)
 
