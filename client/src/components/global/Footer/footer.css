@@ -23,7 +23,7 @@
   }
   #footer-logo img {
     display: table-cell;
-    width: 115%;
+    max-width: 300px;
     height: auto;
     margin-left: 5%;
   }
