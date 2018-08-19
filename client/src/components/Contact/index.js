@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Col, Row, Input, Form, Button } from 'reactstrap';
 import axios from 'axios';
 import iPhone from './iPhoneX_Mockup_FPTS.png'
-
+import './contact.css';
 export default class Contact extends Component {
 
   state = {
@@ -42,8 +42,8 @@ export default class Contact extends Component {
     return (
       <Container className = "contact-form">
         <Row>
-          <Col sm = "12" md = {{size :4}} lg='4'>
-            <img style={{ maxHeight: '470px' }} alt = "" src={iPhone} />
+          <Col className = "contact-img" sm = "12" md = {{size:3}} lg='4'>
+            <img style = {{width:'100%'}} alt = "" src={iPhone} />
           </Col>
           <Col sm = {{size: 12, offset:0}} md ={{ size:11, offset:1}} lg={{size:'5', offset:'2'}}>
             <h1>Contact Us</h1>

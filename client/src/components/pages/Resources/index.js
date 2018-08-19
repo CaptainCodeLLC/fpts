@@ -12,21 +12,21 @@ export default class Resources extends Component {
         const caption = 
         <Container style ={{textAlign:'center'}}>
         <Row sm='12' id = "resources-links">
-            <Col xs='3' sm='3' lg='2'>
+            <Col xs='12' sm='3' lg='2'>
                 <a href="#dates">
                     <p>
                         Important Dates
                     </p>
                 </a>
             </Col>
-            <Col xs='3' sm='3' lg='2'>
+            <Col xs='12' sm='3' lg='2'>
                 <a href="#affiliations">
                     <p>
                         Affiliations
                     </p>
                 </a>
             </Col>
-            <Col xs='3' sm='3' lg='2'>
+            <Col xs='12' sm='3' lg='2'>
                 <a href="#links">
                     <p>
                         Links

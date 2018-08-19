@@ -7,7 +7,7 @@ export default class ServiceFees extends Component {
       <div className = "services-container">
       <Container >
         <Row style={{ marginBottom: 0 }}>
-          <h1 className="services-header">Fee Schedule Information</h1>
+          <h1 className="services-header" style = {{marginLeft:'10px'}}> Fee Schedule Information</h1>
         </Row>
         <hr />
         <Row>
@@ -171,7 +171,7 @@ export default class ServiceFees extends Component {
           </Col>
         </Row>
         <Row style={{ textAlign: "center" }}>
-          <Col lg='12'>
+          <Col className = 'fees-table'lg='12'sm ='12'>
             <h2>Fee Calculation Samples</h2>
             <Table striped bordered hover>
               <thead>

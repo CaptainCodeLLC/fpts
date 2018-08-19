@@ -12,7 +12,13 @@
 
 #splash-text{
     font-family: 'Orbitron', sans-serif;
-
+    font-size:2.8rem;
+    color:white;
+    position: absolute;
+    z-index: 50!important;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 .slide-container{
     width: 100%;
@@ -44,16 +50,7 @@
     top:25%;
 }
 
-#text-container h1{
-    font-size:2.8rem;
-    color:white;
-    position: absolute;
-    z-index: 50!important;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
 
-}
 #text-container p{
     margin-top:80px;
     font-size:1.5rem;
@@ -97,12 +94,13 @@
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width:760px) {
 .carousel{
     position: relative;
     width:100%;
 
 }
+
 
 img.carousel-img{
     width:100%;
@@ -112,21 +110,29 @@ img.carousel-img{
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .carousel{
-        position: relative;
-        height:90%;
+@media only screen and (max-width: 759px) {
+    .slide-container{
+        height:85vh;
+    }
+    
+    #text-container p{
+        margin-top:40px;
+        font-size:1.1rem;
+        color:white;
 
     }
-    .carousel-img{
+    .carousel-img img{
         width:auto;
-        height:93vh;
+        height:100%;
+        overflow: hidden;
         z-index: 0;
     }
     .company-tagline{
         text-align: center;
     }
-
+    #splash-text{
+        font-size: 22px;
+    }
 }
 
 .landing-form{

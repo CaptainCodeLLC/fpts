@@ -1,0 +1,14 @@
+@media only screen and (min-width: 750px) {
+.contact-img img{
+    min-height:440px;
+    min-width: 630px;
+    }
+}
+
+@media only screen and (max-width:749px){
+    .contact-img{
+        max-height: 270px;
+        margin-bottom:20px;
+        max-width:378px;
+    }
+}

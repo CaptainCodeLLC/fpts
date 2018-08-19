@@ -17,3 +17,11 @@
 .table-striped{
     color:#171717;
 }
+
+@media only screen and (max-width: 750px){
+.fees-table{
+    display:none;
+    flex-direction: column;
+    max-width: 100vw;
+    }
+}
