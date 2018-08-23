@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {Container, Row, Col,Card, CardBody,CardTitle, CardSubtitle, Button} from 'reactstrap';
-import machinery from './images/machinery.jpg';
-import downtownNighttime from './images/downtownNighttime.jpg';
+
 import './services.css'
 import Parallax from '../global/parallax/Parallax';
 export default class Services extends Component {
@@ -11,13 +10,13 @@ export default class Services extends Component {
       {
       cardTitle:"Real Estate",
       cardSubtitle:"Commercial and Residential Property",
-      cardImage:downtownNighttime,
+      cardImage:"https://s3.amazonaws.com/fpts-images/downtownNighttime.jpg",
       link: "/services/real-estate",
     },
     {
       cardTitle:"Tangible Personal Property",
       cardSubtitle:"Protect what you care about",
-      cardImage:machinery,
+      cardImage:"https://s3.amazonaws.com/fpts-images/machinery.jpg",
       link:"/services/tangible-personal-property",
     },
 
@@ -41,7 +40,7 @@ export default class Services extends Component {
 
     return (
       <div>
-          <Parallax topOffset={90} src = {downtownNighttime} caption= "Innovative • Thorough • Effective" text = 'Approach and Services'/>
+          <Parallax topOffset={90} src = {cardInfo[0].cardImage} caption= "Innovative • Thorough • Effective" text = 'Approach and Services'/>
         <Container>
           <br/>
         <p className = "section-content"> <span className = "emphasis">Approach</span></p>

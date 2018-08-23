@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Nav, NavLink, Table, ListGroupItem, ListGroupItemHeading } from 'reactstrap';
+import { Container, Row, Col, Nav, NavLink, Table } from 'reactstrap';
 import './tangible-personal-property.css';
 
 

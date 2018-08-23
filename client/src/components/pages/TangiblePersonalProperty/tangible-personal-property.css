@@ -9,7 +9,7 @@
         rgba(20,20,20, .4), 
         rgba(20,20,20, .7),
         rgba(19,10,10, .35)),
-        url(./images/tangible-property.jpg);
+        url("https://s3.amazonaws.com/fpts-images/tangible-property.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 5!important;

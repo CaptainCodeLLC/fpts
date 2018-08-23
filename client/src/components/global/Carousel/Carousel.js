@@ -3,14 +3,6 @@ import Slider from 'react-slick';
 import Slide from './Slide';
 import './landing-carousel.css'
 
-import miamiSkyline from './images/miamiSkyline.jpg';
-import parkingGarage from './images/parkingGarage.jpg';
-import parkingGarage1 from './images/parkingGarage1.jpg';
-import rooftop from './images/rooftop.jpg';
-import sunrise from './images/sunrise.jpg';
-import sunset from './images/sunset.jpg';
-import traffic from './images/traffic.jpg';
-
 export default class Carousel extends React.Component {
   render() {
     var settings = {

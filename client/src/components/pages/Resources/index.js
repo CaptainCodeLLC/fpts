@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Input } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import './resources.css'
 import resources from './resources.jpg'
 import ImportantDates from './ImportantDates/';

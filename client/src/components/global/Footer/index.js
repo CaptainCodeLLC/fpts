@@ -4,15 +4,15 @@ export default class Footer extends Component {
 
     
     render() {
-        console.log(window.innerWidth);
-        var footerStyle = 'desktop';
+        // console.log(window.innerWidth);
+        // var footerStyle = 'desktop';
         
         
-        function isMobile(){
-            if(window.innerWidth <= 750){
-                footerStyle= 'mobile';
-            }
-        }
+        // function isMobile(){
+        //     if(window.innerWidth <= 750){
+        //         footerStyle= 'mobile';
+        //     }
+        // }
         
         return (
             <div className = "footer-container-global">

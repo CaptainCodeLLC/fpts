@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import {Container} from 'reactstrap';
 import Parallax from '../../global/parallax/Parallax';
-import about from './images/about.jpg'
 import './about.css';
 export default class About extends Component {
   render() {
     return (
       <div>
-        <Parallax topOffset = {100} text= "About FPTS" src = {about}/>
+        <Parallax topOffset = {100} text= "About FPTS" src = "https://s3.amazonaws.com/fpts-images/about.jpg"/>
         <Container className= "about-container">
           <h1>
             <strong>Appealing Property Taxes Since 1984</strong>
