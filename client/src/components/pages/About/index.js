@@ -21,6 +21,7 @@ export default class About extends Component {
           <p>
             To provide our clients with the highest quality in professional property tax reduction services, applying client-centered care, advanced technology, innovative techniques and personal attention.
           </p>
+          <br/>
         </Container>
       </div>
     )

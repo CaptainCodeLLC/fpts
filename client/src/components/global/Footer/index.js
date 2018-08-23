@@ -36,10 +36,10 @@ export default class Footer extends Component {
                     </div>
                         <div className="footer-item" >
                             <h1 className='footer-header'>Services</h1>
-                        <a href="/services/real_estate_property">
-                            <p>Real Estate</p>
+                        <a href="/services/real-estate">
+                            <p className="footer-list-item">Real Estate</p>
                         </a>
-                        <a href="/services/tangible_personal_property">
+                        <a href="/services/tangible-personal-property">
                             <p>
                                 Tangible Personal Property
                             </p>
@@ -47,7 +47,7 @@ export default class Footer extends Component {
                         </div>
                        <div className = "footer-item">
                             <h1 className='footer-header'>Pricing</h1>
-                            <p style ={{margin:0}}>
+                            <p className = "footer-list-item">
                             <a href="/service_fees">
                                 Price Guide
                             </a>

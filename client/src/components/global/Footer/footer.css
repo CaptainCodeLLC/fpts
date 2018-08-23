@@ -10,6 +10,9 @@
     color:white;
     text-align: center; 
   }
+  .footer-list-item{
+    margin:0;
+  }
   .footer-container-global{
     display: flex;
     flex-direction: column;

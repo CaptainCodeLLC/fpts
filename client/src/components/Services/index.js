@@ -12,14 +12,12 @@ export default class Services extends Component {
       cardTitle:"Real Estate",
       cardSubtitle:"Commercial and Residential Property",
       cardImage:downtownNighttime,
-      cardText:"",
       link: "/services/real-estate",
     },
     {
       cardTitle:"Tangible Personal Property",
       cardSubtitle:"Protect what you care about",
       cardImage:machinery,
-      cardText:"",
       link:"/services/tangible-personal-property",
     },
 

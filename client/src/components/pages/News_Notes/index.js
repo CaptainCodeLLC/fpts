@@ -11,7 +11,7 @@ export default class News extends Component {
           </h1>
           <hr/>
           <Row>
-            <Col lg = {{size:'12',offset:'1'}}>
+            <Col lg = {{size:'11',offset:'1'}}>
             <h2>2018 Petition Filings are around the corner.</h2>
               <h3> If your property sustained damages as a result of Hurricane Irma, we can help! <br/> Please <a href = "#contact">contact </a>our office for a <strong>free</strong> consultation.</h3>
               <p> By Florida statutes, property owners with an active appeal must pay the minimum taxes due by March 31st or the appeal will be canceled by the Value Adjustment Board (VAB). <br/>For important tax collector or property appraiser links, please view our<a href = "/resources"> resources </a>page.</p>
@@ -19,6 +19,7 @@ export default class News extends Component {
               </p>
             </Col>
           </Row>
+          <br/>
       </Container>
     )
   }

@@ -27,13 +27,13 @@ export default class Carousel extends React.Component {
     return (
         <div>
           <Slider {...settings}>
-            <Slide img = {miamiSkyline}/>
-            <Slide img = {rooftop}/>
-            <Slide img = {parkingGarage}/>
-            <Slide img = {traffic}/>
-            <Slide img = {sunrise}/>
-            <Slide img = {parkingGarage1}/>
-            <Slide img = {sunset}/>
+            <Slide img = "https://s3.amazonaws.com/fpts-images/miamiSkyline.jpg"/>
+            <Slide img = "https://s3.amazonaws.com/fpts-images/rooftop.jpg"/>
+            <Slide img = 'https://s3.amazonaws.com/fpts-images/parkingGarage2.jpg'/>
+            <Slide img = "https://s3.amazonaws.com/fpts-images/sunset.jpg"/>
+            <Slide img = "https://s3.amazonaws.com/fpts-images/sunrise.jpg"/>
+            <Slide img = 'https://s3.amazonaws.com/fpts-images/parkingGarage.jpg'/>
+            <Slide img = 'https://s3.amazonaws.com/fpts-images/traffic.jpg'/>
             
           </Slider>
         </div>

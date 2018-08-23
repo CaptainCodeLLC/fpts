@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Container,Col} from 'reactstrap';
 import './mission.css'
-import team from './images/misson2.jpg';
 import Parallax from '../global/parallax/Parallax';
 
 export default class Mission extends Component {
@@ -11,7 +10,7 @@ export default class Mission extends Component {
 
         <div id = "mission-container">
 
-          <Parallax src={team} topOffset={90} text="Our Mission" caption = "Your time is valuable - let us do the work."/>
+          <Parallax src="https://s3.amazonaws.com/fpts-images/missionParallax.jpg" topOffset={90} text="Our Mission" caption = "Your time is valuable - let us do the work."/>
        
           <Container>
             <h2>

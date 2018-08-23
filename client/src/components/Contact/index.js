@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Col, Row, Input, Form, Button } from 'reactstrap';
 import axios from 'axios';
-import iPhone from './iPhoneX_Mockup_FPTS.png'
 import './contact.css';
 export default class Contact extends Component {
 
@@ -43,7 +42,7 @@ export default class Contact extends Component {
       <Container className = "contact-form">
         <Row>
           <Col className = "contact-img" sm = "12" md = {{size:3}} lg='4'>
-            <img style = {{width:'100%'}} alt = "" src={iPhone} />
+            <img style = {{width:'100%'}} alt = "" src="https://s3.amazonaws.com/fpts-images/iPhoneX_Mockup_FPTS.png" />
           </Col>
           <Col sm = {{size: 12, offset:0}} md ={{ size:11, offset:1}} lg={{size:'5', offset:'2'}}>
             <h1>Contact Us</h1>
