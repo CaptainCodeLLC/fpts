@@ -2,6 +2,7 @@ import React from 'react';
 import './navigation.css';
 import DrawerToggle from '../sideDrawer/drawerToggle';
 import {DropdownToggle, UncontrolledDropdown, DropdownItem, DropdownMenu} from 'reactstrap'
+import {Link} from 'react-router-dom'
 
 const toolbar = props => (
     <header className = "toolbar">
@@ -30,7 +31,9 @@ const toolbar = props => (
                             Services
                         </DropdownToggle>
                         <DropdownMenu>
-                            <DropdownItem tag="a" href="/services/real-estate" active>Real Estate</DropdownItem>
+                            <DropdownItem tag="a"active>
+                                <Link to = "/services/real-estate">Real Estate</Link>
+                                </DropdownItem>
                             <hr style = {{color:'orange',margin:0}}/>
                             <DropdownItem tag="a" href="/services/tangible-personal-property" active>Tangible Personal Property</DropdownItem>
                         </DropdownMenu>

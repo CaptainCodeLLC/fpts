@@ -3,6 +3,9 @@
     min-height:440px;
     min-width: 630px;
     }
+.form-group{
+    margin:0!important;
+}
 }
 
 @media only screen and (max-width:749px){

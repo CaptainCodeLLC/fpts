@@ -26,14 +26,14 @@
   }
   #footer-logo img {
     display: table-cell;
-    max-width: 250px;
+    width: 100%;
+    max-width: 200px;
     height: auto;
     margin-left: 5%;
   }
 }
 @media only screen and (max-width:750px){
   .footer-container-content{
-  
     width:100%;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@
   }
   #footer-logo img {
     display: table-cell;
-    width: 85%;
+    max-width: 85%;
     height: auto;
     margin-left: 5%;
     margin-top:2%;
