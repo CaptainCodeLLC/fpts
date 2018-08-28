@@ -28,8 +28,9 @@
 }
 .carousel-img img{
     width:100%;
-    height:auto;
-    position: absolute;
+    height:100%;
+    overflow: hidden;
+    
     top: 0;
     left: 0;
 }

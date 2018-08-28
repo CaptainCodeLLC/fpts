@@ -3,14 +3,22 @@ const { Schema } = mongoose;
 
 //Message Schema
 
-const UserSchema = new Schema ({
-    name: {
+const MessageSchema = new Schema ({
+    firstName: {
         type: String,
         required: true
+    },
+    lastName:{
+        type:String,
+        required:true
     },
     emailAddress: {
         type:String,
         required:true
+    },
+    companyName: {
+        type:String,
+        required:false
     },
     subjectLine:{
         type:String,
@@ -20,10 +28,7 @@ const UserSchema = new Schema ({
         type:String,
         required:false
     },
-    companyName: {
-        type:String,
-        required:false
-    },
+ 
     message:{
         type:String,
         required:true
@@ -34,4 +39,4 @@ const UserSchema = new Schema ({
     }
 }); 
 
-module.exports = User = mongoose.model('message', UserSchema);
+module.exports = User = mongoose.model('message', MessageSchema);

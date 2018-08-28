@@ -21,7 +21,7 @@ export default class Carousel extends React.Component {
           <Slider {...settings}>
             <Slide img = "https://s3.amazonaws.com/fpts-images/miamiSkyline.jpg"/>
             <Slide img = "https://s3.amazonaws.com/fpts-images/rooftop.jpg"/>
-            <Slide img = 'https://s3.amazonaws.com/fpts-images/parkingGarage2.jpg'/>
+            <Slide img = 'https://s3.amazonaws.com/fpts-images/parkingGarage1.jpg'/>
             <Slide img = "https://s3.amazonaws.com/fpts-images/sunset.jpg"/>
             <Slide img = "https://s3.amazonaws.com/fpts-images/sunrise.jpg"/>
             <Slide img = 'https://s3.amazonaws.com/fpts-images/parkingGarage.jpg'/>

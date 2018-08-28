@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Col, Row, Input, Form, Button } from 'reactstrap';
+import { Container, Col, Row, Input, Button } from 'reactstrap';
 import {AvForm, AvField} from 'availity-reactstrap-validation';
 import axios from 'axios';
 import './contact.css';
@@ -24,7 +24,7 @@ export default class Contact extends Component {
   handleSubmit(e) {
     e.preventDefault();
  
-      axios.post('/users', this.state)
+      axios.post('/api/message', this.state)
         .then(res => console.log('axios response', res))
         .catch(err => console.log(err))
 
@@ -38,6 +38,7 @@ export default class Contact extends Component {
         message: ''
       })
     }
+  
   
 
   render() {
@@ -62,7 +63,7 @@ export default class Contact extends Component {
                   <br />
                 </Col>
                 <Col>
-                  <Input
+                  <AvField
                     name="lastName"
                     placeholder="Last Name"
                     value={this.state.lastName}
@@ -82,24 +83,35 @@ export default class Contact extends Component {
                   />
                   <br />
                 </Col>
-
               </Row>
-              <AvField
-                name="telephoneProp" 
-                placeholder="Phone Number" 
-                type="text"
-                validate={{tel: true}}
-                value={this.state.phoneNumber}
-                onChange={e => this.handleChange(e)}
-              />
+              <Row>
+                <Col>
+                  <Input
+                    name="companyName"
+                    placeholder="Company Name"
+                    value={this.state.companyName}
+                    onChange={e => this.handleChange(e)}
+                  />
+                  </Col>
+                  <Col>
+                  <AvField
+                    name="telephoneProp" 
+                    placeholder="Phone Number" 
+                    type="text"
+                    validate={{tel: true}}
+                    value={this.state.phoneNumber}
+                    onChange={e => this.handleChange(e)}
+                  />
+                </Col>
+             </Row>
               <br />
               <Input
                 name="companyName"
-                placeholder="Company Name"
+                placeholder="Subject Line"
                 value={this.state.companyName}
                 onChange={e => this.handleChange(e)}
               />
-              <br />
+              <br/>
               <Input
                 type="textarea"
                 style={{ height: 180 }}
@@ -110,7 +122,7 @@ export default class Contact extends Component {
               />
 
               <Col style={{ textAlign: 'center' }} lg="3" className="contact-button-container">
-                <Button className="contact-button" color="success" onClick={(e) => this.handleSubmit(e)}> Submit </Button>
+                <Button {...(false ? {disabled: true} : { disabled: false})} className="contact-button" color="success" onClick={(e) => this.handleSubmit(e)}> Submit </Button>
               </Col>
 
             </AvForm>
