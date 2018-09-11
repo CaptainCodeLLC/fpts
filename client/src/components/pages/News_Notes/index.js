@@ -12,6 +12,9 @@ export default class News extends Component {
           <hr/>
           <Row>
             <Col lg = {{size:'11',offset:'1'}}>
+
+            <h3>ATTENTION: Our firm was one of the affected companies of the Domain Registry outage yesterday. If you attempted to email us yesterday, please contact our office or resend your email to confirm receipt. We apologize for the inconvenience and appreciate your business. Thank you for your understanding</h3>
+            <br/>
             <h2>2018 Petition Filings are around the corner.</h2>
               <h3> If your property sustained damages as a result of Hurricane Irma, we can help! <br/> Please <a href = "#contact">contact </a>our office for a <strong>free</strong> consultation.</h3>
               <p> By Florida statutes, property owners with an active appeal must pay the minimum taxes due by March 31st or the appeal will be canceled by the Value Adjustment Board (VAB). <br/>For important tax collector or property appraiser links, please view our<a href = "/resources"> resources </a>page.</p>
