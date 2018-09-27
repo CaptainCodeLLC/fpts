@@ -35,7 +35,8 @@ export default class Contact extends Component {
         emailAddress: '',
         phoneNumber: '',
         companyName: '',
-        message: ''
+        message: '',
+        subjectLine:''
       })
     }
   
@@ -51,11 +52,11 @@ export default class Contact extends Component {
           <Col sm={{ size: 12, offset: 0 }} md={{ size: 11, offset: 1 }} lg={{ size: '5', offset: '2' }}>
             <h1>Contact Us</h1>
             <hr />
-            <AvForm style = {{margin:0}}>
+            <AvForm action = "https://formspree.io/eddy@captaincode.cc"  method="POST" style = {{margin:0}}>
               <Row>
                 <Col>
                   <AvField
-                    name="firstName"
+                    name="First Name"
                     placeholder="First Name"
                     value={this.state.firstName}
                     onChange={e => this.handleChange(e)}
@@ -64,7 +65,7 @@ export default class Contact extends Component {
                 </Col>
                 <Col>
                   <AvField
-                    name="lastName"
+                    name="Last Name"
                     placeholder="Last Name"
                     value={this.state.lastName}
                     onChange={e => this.handleChange(e)}
@@ -74,7 +75,7 @@ export default class Contact extends Component {
               <Row>
                 <Col>
                 <AvField
-                  name="emailAddress" 
+                  name="Email" 
                   placeholder="Email Address"
                   onChange={e => this.handleChange(e)}
                   value={this.state.emailAddress}
@@ -86,8 +87,8 @@ export default class Contact extends Component {
               </Row>
               <Row>
                 <Col>
-                  <Input
-                    name="companyName"
+                  <AvField
+                    name="Company Name"
                     placeholder="Company Name"
                     value={this.state.companyName}
                     onChange={e => this.handleChange(e)}
@@ -95,7 +96,7 @@ export default class Contact extends Component {
                   </Col>
                   <Col>
                   <AvField
-                    name="telephoneProp" 
+                    name="Telephone" 
                     placeholder="Phone Number" 
                     type="text"
                     validate={{tel: true}}
@@ -106,14 +107,14 @@ export default class Contact extends Component {
              </Row>
               <br />
               <Input
-                name="companyName"
+                name="Subject Line"
                 placeholder="Subject Line"
-                value={this.state.companyName}
+                value={this.state.subjectLine}
                 onChange={e => this.handleChange(e)}
               />
               <br/>
               <Input
-                type="textarea"
+                type="Message"
                 style={{ height: 180 }}
                 name="message"
                 placeholder="Talk to us"
