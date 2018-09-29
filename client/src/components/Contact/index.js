@@ -124,6 +124,7 @@ export default class Contact extends Component {
 
               <Col style={{ textAlign: 'center' }} lg="3" className="contact-button-container">
                 <Button {...(false ? {disabled: true} : { disabled: false})} className="contact-button" color="success" onClick={(e) => this.handleSubmit(e)}> Submit </Button>
+                <br/>
               </Col>
 
             </AvForm>
