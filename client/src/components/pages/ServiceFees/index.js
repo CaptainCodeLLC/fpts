@@ -172,6 +172,7 @@ export default class ServiceFees extends Component {
         </Row>
         <Row style={{ textAlign: "center" }}>
           <Col className = 'fees-table'lg='12'sm ='12'>
+          <br/>
             <h2>Fee Calculation Samples</h2>
             <Table striped bordered hover>
               <thead>
@@ -212,7 +213,8 @@ export default class ServiceFees extends Component {
             </Table>
           </Col>
         </Row>
-      </Container >
+      </Container>
+      <br/>
     </div>
     )
   }

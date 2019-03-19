@@ -10,7 +10,8 @@
     "morgan": "^1.9.0",
     "namshi-node-mysql": "^2.0.0",
     "nodemailer": "^4.6.8",
-    "popper.js": "^1.14.4"
+    "popper.js": "^1.14.4",
+    "yarn": "^1.13.0"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.2.0",
@@ -22,7 +23,7 @@
   "description": "Florida Property Tax Service backend",
   "main": "server.js",
   "scripts": {
-    "client-install": "cd client && yarn install",
+    "5": "cd client && yarn install",
     "start": "node server.js",
     "heroku-postbuild": "cd client && yarn && yarn install --only=dev --no-shrinkwrap && yarn run build",
     "server": "nodemon server.js",
