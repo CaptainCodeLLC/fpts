@@ -5,7 +5,7 @@ const IconCard = (props) => {
   return (
     <div>
       <Card  className = "card-img-border" inverse>
-        <CardImg className = "card-img-border" height="100%" src={props.img} alt="Card image cap" />
+        <CardImg className = "card-img-border" src={props.img} alt="Card image cap" />
         <CardImgOverlay>
           <div id = "affiliate-text-container">
             <CardTitle style = {{textAlign:'center'}}>
