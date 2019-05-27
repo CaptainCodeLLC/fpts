@@ -22,7 +22,7 @@ export default class TeamMember extends Component {
     return (
       <div >
          <Card  style ={{marginBottom:'15px'}}>
-            <CardImg  style ={{height:'10%'}} src={this.props.image} alt="Card image cap" />
+            <CardImg  src={this.props.image} alt="Card image cap" />
             <CardBody style = {{textAlign:'center'}}>
                 <CardTitle>{this.props.name}</CardTitle>
                 <CardSubtitle style ={{marginBottom:10}}>{this.props.role}</CardSubtitle>
