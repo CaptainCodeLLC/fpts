@@ -21,7 +21,7 @@ mongoose.connect(db, { useNewUrlParser: true })
         .catch(err => console.log(err)); 
 
 app.use(morgan('short'))
-const port = process.env.PORT || process.env.DEV_PORT;
+const port  = process.env.PORT || process.env.DEV_PORT;
 
 // Body parser middleware
 app.use(bodyParser.json());
