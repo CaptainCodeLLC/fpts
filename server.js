@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Config Vars - mLab
 require('dotenv').config();
 const keys = require('./config/keys');
@@ -60,3 +61,5 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   });
 }
+=======
+>>>>>>> c0397e4d447cc9c8791d3688da74fd46b55d3595
