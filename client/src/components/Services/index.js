@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Container, Col, Table } from 'reactstrap';
-import './service.css';
+import './services.css';
 export default class ServiceFees extends Component {
   render() {
     return (
