@@ -28,7 +28,9 @@
     "heroku-postbuild": "cd client && yarn && yarn install --only=dev --no-shrinkwrap && yarn run build",
     "server": "nodemon server.js",
     "client": "cd client && yarn start",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "build": "cd client && npm run build"
+  
   },
   "repository": "https://github.com/CaptainCodeLLC/fpts.git",
   "author": "Eddy D. Varela with Captain Code",
