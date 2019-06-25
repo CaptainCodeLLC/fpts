@@ -55,7 +55,7 @@ export default class Resources extends Component {
                 </Row>
                 <Row>
                     <Col lg='5'>
-                        <h1>2017 VAB Tax appeal filing deadlines</h1>
+                        <h1>2019 VAN Tax appeal filing deadlines</h1>
                     </Col>
 
                     <Col lg='7'>
