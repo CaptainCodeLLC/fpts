@@ -5,7 +5,7 @@ export default class ImportantDates extends Component {
     return (
       <div>
 
-        <h1 id = "important-dates-header">2018-2019 Property Tax Calendar</h1>
+        <h1 id = "important-dates-header">2019-2020 Property Tax Calendar</h1>
 
         <Table>
         <thead>
