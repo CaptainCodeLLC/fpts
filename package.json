@@ -11,7 +11,7 @@
       "namshi-node-mysql": "^2.0.0",
       "nodemailer": "^4.6.8",
       "popper.js": "^1.14.4",
-      "yarn": "^1.13.0"
+      "yarn": "^1.17.3"
     },
     "devDependencies": {
       "@fortawesome/fontawesome-free": "^5.2.0",
