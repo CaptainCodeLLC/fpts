@@ -5,7 +5,7 @@
   "proxy": "http://localhost:5000",
   "dependencies": {
     "availity-reactstrap-validation": "^2.0.6",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.1.2",
     "gulp": "^3.9.1",
     "jquery-parallax.js": "^1.5.0",
